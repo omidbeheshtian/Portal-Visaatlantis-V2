@@ -1,0 +1,12 @@
+<?php
+$license = "A101-B324-DA2D-49CF";
+$server = $_SERVER["SERVER_NAME"];
+$c = curl_init();
+curl_setopt($c, CURLOPT_URL, "http://licenseow.omid-web.ir/verifyLicense.php");
+curl_setopt($c, CURLOPT_TIMEOUT, 30);
+curl_setopt($c, CURLOPT_POST, 1);
+curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+$postfields = 'svr='.$server.'&lic='.$license;
+curl_setopt($c, CURLOPT_POSTFIELDS, $postfields);
+$result = curl_exec($c);
+?>
