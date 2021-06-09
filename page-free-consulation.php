@@ -49,8 +49,8 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="index.html">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/images/icon/valogo" alt="Visa Atlantis" />
+                    <a class="logo" href="../dashboard">
+                            <p>ویزا آتلانتیس</p>
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -64,28 +64,24 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
-                            <a class="js-arrow" href="../dashboard">
-                                <i class="fas fa-tachometer-alt"></i>داشبورد</a>
+                            <a class="js-arrow" href="../../dashboard">
+                                <i class="fas fa-tachometer-alt" style="padding: 0 0 0 10px;"></i>داشبورد</a>
+                        </li>
+                        <li>
+                            <a href="../../cunsulations">
+                                <i class="fas fa-chart-bar" style="padding: 0 0 0 10px;"></i>مشاوره اختصاصی</a>
+                        </li>
+                        <li>
+                            <a href="../../free-consulation">
+                                <i class="fas fa-table" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fas fa-chart-bar"></i>تست</a>
+                                <i class="fas fa-calendar-alt" style="padding: 0 0 0 10px;"></i>فایل های مشاوره</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fas fa-table"></i>تست</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="far fa-check-square"></i>تست</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-calendar-alt"></i>تست</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-map-marker-alt"></i>تست</a>
+                            <a href="../../my-account/orders">
+                                <i class="fas fa-map-marker-alt" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
                         </li>
                     </ul>
                 </div>
@@ -186,7 +182,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                     <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">لطفا اطلاعات خود را وارد کنید تا بهترین پکیج برای شما نمایش داده شود!</h2>
+                                    <h2 class="title-1" style="text-align: center;">لطفا اطلاعات خود را وارد کنید تا بهترین پکیج برای شما نمایش داده شود!</h2>
                                 </div>
                             </div>
                         </div>

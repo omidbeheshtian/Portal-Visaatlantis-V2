@@ -653,3 +653,8 @@ a.txt2:hover {
 h2{
     padding: 5px;
 }
+
+.navbar-mobile{
+    text-align: right !important;
+}
+
