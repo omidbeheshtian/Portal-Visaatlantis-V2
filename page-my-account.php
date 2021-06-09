@@ -183,16 +183,10 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <?php the_content(); ?>
+                    <?php the_content(); ?>
                             <div class="row m-t-25">
                                 <div class="col-sm-6 col-lg-12">
-                                    <div class="overview-item overview-item--c4" >
-                                        <div class="overview__inner">
-                                            <div class="overview-chart">
-                                            <?php the_content(); ?>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                     </div>

@@ -609,3 +609,47 @@ a.txt2:hover {
 .woocommerce-additional-fields__field-wrapper{
     display:none;
 }
+.woocommerce-orders-table__header{
+   text-align: center;
+   margin : 50px;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+.woocommerce-orders-table__cell{
+    padding: 25px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.nobr{
+    text-align: right;
+}
+
+.woocommerce-button.button.pay{
+    margin-left: 15px;
+}
+
+.woocommerce-button.button.cancel{
+    margin-right: 15px;
+}
+.woocommerce-button{
+    color: rgb(44, 44, 44);
+}
+
+.woocommerce-MyAccount-navigation {
+    display: none;
+}
+
+.woocommerce-MyAccount-content{
+    text-align: right;
+}
+
+.woocommerce-order-details{
+    padding: 20px 0px;
+}
+
+.woocommerce-OrderUpdates.commentlist.notes{
+    padding: 20px 0px 10px 0px;
+}
+h2{
+    padding: 5px;
+}
