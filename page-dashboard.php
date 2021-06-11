@@ -213,7 +213,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                                 <i class="zmdi zmdi-shopping-cart"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>388,688</h2>
+                                                <h2>38,868</h2>
                                                 <span>تست</span>
                                             </div>
                                         </div>

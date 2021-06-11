@@ -224,12 +224,13 @@ add_action( 'user_register', 'auto_login_new_user' );
         function wpb_login_logo() { ?>
             <style type="text/css">
                 #login h1 a, .login h1 a {
-                    background-image: url(http://path/to/your/custom-logo.png);
+                background-image: url('/pics/logo-omidweb.png/');
                 height:100px;
                 width:300px;
-                background-size: 300px 100px;
+                background-size: cover;
                 background-repeat: no-repeat;
                 padding-bottom: 10px;
+                z-index: 9999;
                 }
             </style>
         <?php }
@@ -238,12 +239,12 @@ add_action( 'user_register', 'auto_login_new_user' );
         //change logo link in login page
 
         function wpb_login_logo_url() {
-            return home_url();
+            return 'https://omidbeheshtian.ir';
         }
         add_filter( 'login_headerurl', 'wpb_login_logo_url' );
          
         function wpb_login_logo_url_title() {
-            return 'Your Site Name and Info';
+            return 'Omid Beheshtian Website';
         }
         add_filter( 'login_headertitle', 'wpb_login_logo_url_title' );
 
@@ -261,9 +262,13 @@ add_action( 'user_register', 'auto_login_new_user' );
 
         function login_error_override()
         {
-            return 'Incorrect login details.';
+            return 'اطلاعات وارد شده برای ورود اشتباه است.';
         }
         add_filter('login_errors', 'login_error_override');
+
+
+        //woocomerce pages and functions
+
 
         function woocommerce_support() {
             add_theme_support( 'woocommerce' );
