@@ -566,9 +566,9 @@ a.txt2:hover {
 .woocommerce-billing-fields{
     width: 150px;
 }
-.woocommerce-additional-fields{
+/* .woocommerce-additional-fields{
     display: none;
-}
+} */
 #order_review_heading{
     float: right;
     padding-right: 18px;
@@ -602,13 +602,13 @@ a.txt2:hover {
     }
 }
 
-.woocommerce-form-coupon-toggle{
+/* .woocommerce-form-coupon-toggle{
     display:none;
 }
 
 .woocommerce-additional-fields__field-wrapper{
     display:none;
-}
+} */
 .woocommerce-orders-table__header{
    text-align: center;
    margin : 50px;
@@ -635,9 +635,9 @@ a.txt2:hover {
     color: rgb(44, 44, 44);
 }
 
-.woocommerce-MyAccount-navigation {
+/* .woocommerce-MyAccount-navigation {
     display: none;
-}
+} */
 
 .woocommerce-MyAccount-content{
     text-align: right;
