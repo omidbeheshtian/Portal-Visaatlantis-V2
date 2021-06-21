@@ -7,10 +7,6 @@
             exit;
         }
 
-        // if (empty($fnamelname)){
-        //     wp_redirect(site_url().'/dashboard?signup=false&msg=2');
-        //     exit;
-        // }
 
         elseif(username_exists($phonenumber)){
             wp_redirect(site_url().'/dashboard?signup=false&msg=4');
@@ -141,15 +137,6 @@ function vaauth($code){
 
         }
 
-
-        // if(empty($phonenumberlogin)){
-        //     wp_redirect(site_url().'/dashboard?login=false&msg=1');
-        //     exit;
-        // }
-        // else{
-        //     wp_redirect(site_url().'/authenticate-login');
-        //     exit;
-        // }
     }
 
 
@@ -224,13 +211,12 @@ add_action( 'user_register', 'auto_login_new_user' );
         function wpb_login_logo() { ?>
             <style type="text/css">
                 #login h1 a, .login h1 a {
-                background-image: url('/pics/logo-omidweb.png/');
+                    background-image: url(http://path/to/your/custom-logo.png);
                 height:100px;
                 width:300px;
-                background-size: cover;
+                background-size: 300px 100px;
                 background-repeat: no-repeat;
                 padding-bottom: 10px;
-                z-index: 9999;
                 }
             </style>
         <?php }
@@ -239,12 +225,12 @@ add_action( 'user_register', 'auto_login_new_user' );
         //change logo link in login page
 
         function wpb_login_logo_url() {
-            return 'https://omidbeheshtian.ir';
+            return home_url();
         }
         add_filter( 'login_headerurl', 'wpb_login_logo_url' );
          
         function wpb_login_logo_url_title() {
-            return 'Omid Beheshtian Website';
+            return 'Your Site Name and Info';
         }
         add_filter( 'login_headertitle', 'wpb_login_logo_url_title' );
 
@@ -262,33 +248,29 @@ add_action( 'user_register', 'auto_login_new_user' );
 
         function login_error_override()
         {
-            return 'اطلاعات وارد شده برای ورود اشتباه است.';
+            return 'Incorrect login details.';
         }
         add_filter('login_errors', 'login_error_override');
-
-
-        //woocomerce pages and functions
-
 
         function woocommerce_support() {
             add_theme_support( 'woocommerce' );
         }
         add_theme_support( 'woocommerce' );
 
-        add_filter('add_to_cart_redirect', 'ow_redirect_add_to_cart');
-        function ow_redirect_add_to_cart() {
-            global $woocommerce;
-            $ow_redirect_url_checkout = $woocommerce->cart->get_checkout_url();
-            return $ow_redirect_url_checkout;
-        }
+//         add_filter('add_to_cart_redirect', 'ow_redirect_add_to_cart');
+//         function ow_redirect_add_to_cart() {
+//             global $woocommerce;
+//             $ow_redirect_url_checkout = $woocommerce->cart->get_checkout_url();
+//             return $ow_redirect_url_checkout;
+//         }
 
-        add_filter( 'woocommerce_product_single_add_to_cart_text', 'ow_btntext_cart' );
-        add_filter( 'woocommerce_product_add_to_cart_text', 'ow_btntext_cart' );
-        function ow_btntext_cart() {
-            return __( 'رزرو این مشاوره', 'woocommerce' );
- }
+//         add_filter( 'woocommerce_product_single_add_to_cart_text', 'ow_btntext_cart' );
+//         add_filter( 'woocommerce_product_add_to_cart_text', 'ow_btntext_cart' );
+//         function ow_btntext_cart() {
+//             return __( 'رزرو این مشاوره', 'woocommerce' );
+//  }
 
- /* Remove Woocommerce User Fields */
+/* Remove Woocommerce User Fields */
         add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
         add_filter( 'woocommerce_billing_fields' , 'custom_override_billing_fields' );
         add_filter( 'woocommerce_shipping_fields' , 'custom_override_shipping_fields' );
@@ -333,5 +315,14 @@ add_action( 'user_register', 'auto_login_new_user' );
 
         return $fields;
         }
+        
+        
+        
+        
 /* End - Remove Woocommerce User Fields */
+
+
+
+
+
         ?>
