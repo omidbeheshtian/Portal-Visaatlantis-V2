@@ -186,7 +186,11 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                         <div class="overview__inner" >
                                             <div class="overview-chart" style="z-index: 999;">
                                             <?php the_content(); ?>
+                                            <?php do_action( 'woocommerce_before_checkout_form', $checkout ); ?>
                                             </div>
+                                            <div class="overview-chart"></div>
+                                            <div class="overview-chart"></div>
+                                            <div class="overview-chart"></div>
                                             <div class="overview-chart"></div>
                                             <div class="overview-chart"></div>
                                             <div class="overview-chart"></div>

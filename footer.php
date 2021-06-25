@@ -1,4 +1,6 @@
-
+<?php if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+} ?>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/jquery-3.2.1.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/popper.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/bootstrap.min.js"></script>
@@ -10,3 +12,8 @@
     })
 </script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/scripts.js"></script>
+
+
+
+
+<?php wp_footer(); ?>

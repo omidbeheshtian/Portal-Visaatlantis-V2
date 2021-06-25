@@ -252,9 +252,9 @@ add_action( 'user_register', 'auto_login_new_user' );
         }
         add_filter('login_errors', 'login_error_override');
 
-        function woocommerce_support() {
-            add_theme_support( 'woocommerce' );
-        }
+        // function woocommerce_support() {
+        //     add_theme_support( 'woocommerce' );
+        // }
         add_theme_support( 'woocommerce' );
 
 //         add_filter('add_to_cart_redirect', 'ow_redirect_add_to_cart');
@@ -290,7 +290,10 @@ add_action( 'user_register', 'auto_login_new_user' );
         unset($fields['shipping']['shipping_address_2']);
         unset($fields['shipping']['shipping_postcode']);
         unset($fields['shipping']['shipping_city']);
-        
+        unset($fields['shipping']['billing_phone']);
+        unset($fields['shipping']['billing_last_name']);
+        unset($fields['shipping']['billing_first_name']);
+
         return $fields;
         }
         function custom_override_billing_fields( $fields ) {
@@ -301,6 +304,9 @@ add_action( 'user_register', 'auto_login_new_user' );
         unset($fields['billing_address_2']);
         unset($fields['billing_postcode']);
         unset($fields['billing_city']);
+        unset($fields['billing_phone']);
+        unset($fields['billing_last_name']);
+        unset($fields['billing_first_name']);
         
         return $fields;
         }
@@ -312,17 +318,16 @@ add_action( 'user_register', 'auto_login_new_user' );
         unset($fields['shipping_address_2']);
         unset($fields['shipping_postcode']);
         unset($fields['shipping_city']);
+        unset($fields['billing_phone']);
+        unset($fields['billing_last_name']);
+        unset($fields['billing_first_name']);
 
         return $fields;
         }
-        
-        
-        
-        
+
 /* End - Remove Woocommerce User Fields */
 
 
 
 
-
-        ?>
+?>

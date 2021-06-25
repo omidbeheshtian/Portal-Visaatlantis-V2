@@ -8,9 +8,6 @@ $nameportal = $usermeta['first_name'][0];
 
 $usermeta = get_user_meta($userID);
 
-$db = 'SELECT * FROM `wp_postmeta` WHERE post_id in (SELECT ID FROM `wp_posts` WHERE post_type = "shop_order")';
-var_dump($db);
-
 if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
 <head dir="rtl">
     <!-- Required meta tags-->
@@ -388,8 +385,7 @@ if(isset($_POST['SubmitName'])){
     $FirstName = sanitize_text_field($_POST['FirstName']);
     if(!empty($FirstName)){
         update_user_meta($userID,'first_name',$FirstName);
-        $url = 'https://portal.visaatlantis.com/dashboard?getname=true';
-        wp_redirect($url);
+        wp_redirect(site_url().'/dashboard');
         exit();
     }
 }

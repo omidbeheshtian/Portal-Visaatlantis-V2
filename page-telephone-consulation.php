@@ -196,7 +196,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                                 </div>
                                             </div>
                                             <div class="overview-chart">
-                                                <a class="login100-form-btn" href="https://localhost/vaomid/consulation-category/telephone-consulation/?add-to-cart=45" style="z-index: 999;">پرداخت و رزرو</a>
+                                                <a class="login100-form-btn" href="https://localhost/vaomid/consulation/test-telephone/?add-to-cart=45" style="z-index: 999;">پرداخت و رزرو</a>
                                             </div>
                                         </div>
                                     </div>
@@ -210,7 +210,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                                 </div>
                                             </div>
                                             <div class="overview-chart">
-                                                <a class="login100-form-btn" href="https://localhost/vaomid/consulation-category/telephone-consulation/?add-to-cart=45" style="z-index: 999;">پرداخت و رزرو</a>
+                                                <a class="login100-form-btn" href="https://localhost/vaomid/consulation/test-telephone/?add-to-cart=45" style="z-index: 999;">پرداخت و رزرو</a>
                                             </div>
                                         </div>
                                     </div>
