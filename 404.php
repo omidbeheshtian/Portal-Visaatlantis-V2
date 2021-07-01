@@ -1,1 +1,1 @@
-<h1>404</h1>
+<img src="<?php echo esc_url(get_template_directory_uri()); ?>/pics/404-pages.jpg" alt="404" />

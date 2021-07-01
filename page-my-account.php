@@ -4,7 +4,7 @@ get_template_part('user');
 $userdata = wp_get_current_user();
 $userID = $userdata->ID;
 $num = $userdata->user_login;
-$nameportal = $usermeta['first_name'][0];
+// $nameportal = $usermeta['first_name'][0];
 
 $usermeta = get_user_meta($userID);
 

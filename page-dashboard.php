@@ -4,7 +4,7 @@ get_template_part('user');
 $userdata = wp_get_current_user();
 $userID = $userdata->ID;
 $num = $userdata->user_login;
-$nameportal = $usermeta['first_name'][0];
+// $nameportal = $usermeta['first_name'][0];
 
 $usermeta = get_user_meta($userID);
 
@@ -192,11 +192,10 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon">
-                                                <i class="zmdi zmdi-account-o"></i>
+                                                <i style="font-size:35px;" class="zmdi zmdi-account-o"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>10368</h2>
-                                                <span>تست</span>
+                                                <h2 style="font-size:23px;">سوابق پرداخت</h2>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -210,11 +209,10 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon">
-                                                <i class="zmdi zmdi-shopping-cart"></i>
+                                                <i style="font-size:35px;" class="zmdi zmdi-shopping-cart"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>38,868</h2>
-                                                <span>تست</span>
+                                                <h2 style="font-size:23px;">فایل های من</h2>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -228,15 +226,13 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon">
-                                                <i class="zmdi zmdi-calendar-note"></i>
+                                                <i style="font-size:35px;" class="zmdi zmdi-calendar-note"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>1,086</h2>
-                                                <span>تست</span>
+                                                <h2 style="font-size:23px;">مشاوره آنلاین (رایگان)</h2>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
-                                           
                                         </div>
                                     </div>
                                 </div>
@@ -246,11 +242,10 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon">
-                                                <i class="zmdi zmdi-money"></i>
+                                                <i style="font-size:35px;" class="zmdi zmdi-money"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>$1,060</h2>
-                                                <span>تست</span>
+                                                <h2 style="font-size:23px;">رزرو وقت مشاوره تخصصی</h2>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -261,39 +256,65 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="au-card recent-report">
+                        <div class="col-lg-3">
+                                <div class="au-card chart-percent-card">
                                     <div class="au-card-inner">
-                                        <h3 class="title-2">تست</h3>
+                                        <h3 class="title-2 tm-b-5"> آخرین اخبار مجموعه</h3>
+                                        <br><br><br><br><br><br><br><br><br><br><br><br>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-9">
                                 <div class="au-card chart-percent-card">
                                     <div class="au-card-inner">
-                                        <h3 class="title-2 tm-b-5">تست</h3>
+                                        <h3 class="title-2 tm-b-5">جایگاه بنر معرفی مجموعه</h3>
+                                        <br><br><br><br><br><br><br><br><br><br><br><br>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
-                                    <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
-                                        <div class="bg-overlay bg-overlay--blue"></div>
-                                        <h3>
-                                            <i class="zmdi zmdi-account-calendar"></i>تست</h3>
-                                        </div>
-                                  </div>
-
-                                <!-- <div class="row">
-                                    <div class="col-md-18">
-                                        <div class="copyright">
-                                            <p>Copyright © 2021 Visaatlantis. All rights reserved. Template by <a href="https://omidbeheshtian.ir">Omid Beheshtian</a>.</p>
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i style="font-size:35px;padding:0px 0px 30px 0px;" class="zmdi zmdi-account-o"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2 style="font-size:23px;">راه های ارتباط</h2>
+                                            </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i style="font-size:35px;padding:0px 0px 30px 0px;" class="zmdi zmdi-shopping-cart"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2 style="font-size:23px;">همکاری</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i style="font-size:35px;" class="zmdi zmdi-calendar-note"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px;">اینستاگرام</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="copyright">

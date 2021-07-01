@@ -2,7 +2,6 @@
 get_template_part('user');
 get_header();
 
-
 if (!$user_ID) {  ?>
 	<div class="limiter">
 		<div class="container-login100">
