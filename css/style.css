@@ -544,27 +544,38 @@ a.txt2:hover {
     transition: ease-in-out .8s ;
     
 }
-.input-text{
-    width: 800px;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: #eeeeee;
-    z-index: 999;
-}
+/*.input-text{*/
+/*    width: 800px !important;*/
+/*    padding: 8px;*/
+/*    border-radius: 10px;*/
+/*    background-color: #eeeeee;*/
+/*    z-index: 999;*/
+/*}*/
 @media (max-width: 992px) {
     .input-text {
-        width: 230px;
+        width: 230px !important ;
         padding: 8px;
         border-radius: 10px;
     }
 }
+@media (min-width: 1200px) {
+    .input-text {
+    width: 800px !important;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    z-index: 999;
+    }
+}
 
 .woocommerce-billing-fields__field-wrapper{
-    width: 300px;
+    width: 300px !important ;
     padding: 5px;
 }
 .woocommerce-billing-fields{
     width: 150px;
+}
+
 }
 .woocommerce-additional-fields{
     display: none;
@@ -658,3 +669,10 @@ h2{
     text-align: right !important;
 }
 
+#delivery_date_field h3{
+    padding-bottom:8px;
+ text-align:right !important;
+}
+.wcdt-digitheme ul{
+ text-align:right !important;
+}
