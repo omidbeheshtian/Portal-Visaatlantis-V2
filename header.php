@@ -80,7 +80,7 @@ $user_name = $usermeta['first_name'][0];
                                 <i class="fas fa-table" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
                         </li>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/#">
+                            <a href="https://portal.visaatlantis.com/dashboard/my-account/files/">
                                 <i class="fas fa-calendar-alt" style="padding: 0 0 0 10px;"></i>فایل های مشاوره</a>
                         </li>
                         <li>
@@ -116,7 +116,7 @@ $user_name = $usermeta['first_name'][0];
                                 <i class="fas fa-table" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
                         </li>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/#" style="float:right;">
+                            <a href="https://portal.visaatlantis.com/dashboard/my-account/files/" style="float:right;">
                                 <i class="far fa-check-square" style="padding: 0 0 0 10px;"></i>فایل های مشاوره</a>
                         </li>
                         <li>
@@ -143,7 +143,7 @@ $user_name = $usermeta['first_name'][0];
                                             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/images/icon/valogo.png" alt="Va" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#"><?php echo $user_name ?></a>
+                                            <a class="js-acc-btn" href="#"><?php echo $user_name ?> خوش آمدید </a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
