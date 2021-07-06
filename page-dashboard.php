@@ -3,7 +3,6 @@ get_template_part('user');
 $userdata = wp_get_current_user();
 $userID = $userdata->ID;
 $num = $userdata->user_login;
-// $nameportal = $usermeta['first_name'][0];
 $usermeta = get_user_meta($userID);
 if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
             <!-- MAIN CONTENT-->
@@ -19,13 +18,13 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                         </div>
                         <div class="row m-t-25">
                             <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF; padding:15px 15px 0;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
 
-                                                <i style="font-size:35px; float:right;" class="fas fa-history"></i>
+                                                <i style="font-size:30px; float:right; color:#4272D7;" class="fas fa-history"></i>
 
-                                                <h2 style="font-size:23px; text-align:right; clear:both; padding-top:10px;">سوابق پرداخت</h2>
+                                                <h2 style="font-size:20px; text-align:right; clear:both; padding-top:10px;">سوابق پرداخت</h2>
 
                                         </div>
                                         <div class="overview-chart">
@@ -35,14 +34,14 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF; padding:15px 15px 0;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
 
-                                                <i style="font-size:35px; float:right;" class="far fa-copy"></i>
+                                                <i style="font-size:30px; float:right; color:#4272D7;" class="far fa-copy"></i>
 
 
-                                                <h2 style="font-size:23px; text-align:right; clear:both; padding-top:10px;">فایل های من</h2>
+                                                <h2 style="font-size:20px; text-align:right; clear:both; padding-top:10px;">فایل های من</h2>
 
                                         </div>
                                         <div class="overview-chart">
@@ -52,13 +51,13 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF; padding:15px 15px 0;">
                                     <div class="overview__inner">
                                         
 
-                                                <i style="font-size:35px; float:right;" class="far fa-comments"></i>
+                                                <i style="font-size:30px; float:right; color:#4272D7;" class="far fa-comments"></i>
 
-                                                <h2 style="font-size:23px; text-align:right; clear:both; padding-top:10px;">مشاوره آنلاین (رایگان)</h2>
+                                                <h2 style="font-size:20px; text-align:right; clear:both; padding-top:10px;">مشاوره آنلاین (رایگان)</h2>
 
                                         
                                         <div class="overview-chart">
@@ -67,13 +66,13 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF; padding:15px 15px 0;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
 
-                                                <i style="font-size:35px; float:right;" class="far fa-calendar-check"></i>
+                                                <i style="font-size:30px; float:right; color:#4272D7;" class="far fa-calendar-check"></i>
 
-                                                <h2 style="font-size:23px; text-align:right; clear:both; padding-top:10px;">رزرو وقت مشاوره تخصصی</h2>
+                                                <h2 style="font-size:20px; text-align:right; clear:both; padding-top:10px;">رزرو وقت مشاوره تخصصی</h2>
 
                                         </div>
                                         <div class="overview-chart">
@@ -106,8 +105,8 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                                 <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                                <i style="font-size:35px; color:#1976D2; float:right;" class="zmdi zmdi-account-o"></i>
-                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#000; text-align:right;;">راه های ارتباط</h2>
+                                                <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fa fa-phone"></i>
+                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#333333; text-align:right;;">راه های ارتباط</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -116,8 +115,8 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                                 <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                                <i style="font-size:35px; color:#1976D2; float:right;" class="zmdi zmdi-shopping-cart"></i>
-                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#000; text-align:right;">همکاری</h2>
+                                                <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fa fa-handshake-o"></i>
+                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#333333; text-align:right;">همکاری</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -126,8 +125,8 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                                 <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                                <i style="font-size:35px; color:#1976D2; float:right;" class="zmdi zmdi-calendar-note"></i>
-                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#000; text-align:right;">اینستاگرام</h2>
+                                                <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fab fa-instagram"></i>
+                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#333333; text-align:right;">اینستاگرام</h2>
                                         </div>
                                     </div>
                                 </div>
