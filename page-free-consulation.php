@@ -8,7 +8,7 @@ $nameportal = $usermeta['first_name'][0];
 
 $usermeta = get_user_meta($userID);
 
-if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
+if ($user_ID) {  ?>
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -92,59 +92,8 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
 <!-- end document-->
 <?php } 
 elseif(!$user_ID){
-    echo "Login First Please.";
+    echo "لطفا ابتدا وارد شوید!";
 }
-elseif($nameportal == NULL){?>
 
-<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100" style="border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 140px;margin-bottom: 0px;">
-
-			<!-- input form -->
-			<form class="login100-form validate-form"  method="POST" action="#">
-				<span class="login100-form-title">نام و نام خانوادگی</span>
-
-				<!-- enter name and lastname-->
-				<div class="wrap-input100 validate-input" data-validate = "لطفا نام و نام خانوادگی خود را وارد کنید!">
-                <input type="text" class="input100" placeholder="نام" value="<?php echo esc_attr($usermeta['first_name'][0]); ?>" name="FirstName" required>
-					<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
-						</span>
-				</div>
-				<!-- / enter name and lastname -->
-
-
-                <!-- register button-->
-
-				<div class="container-login100-form-btn">
-					<button class="login100-form-btn" name="SubmitName" >ورود به داشبورد</button>
-				</div>
-				<!-- / register button -->
-
-			</form>
-			<!-- / input form -->
-
-			<!-- form image -->
-			<div class="login100-pic js-tilt" data-tilt>
-				<img alt="login-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/pics/img-01.png">
-			</div>
-			<!-- / form image -->
-
-			</div>
-		</div>
-	</div>
-
-<?php } 
-if(isset($_POST['SubmitName'])){
-
-    $FirstName = sanitize_text_field($_POST['FirstName']);
-    if(!empty($FirstName)){
-        update_user_meta($userID,'first_name',$FirstName);
-
-        wp_redirect(site_url().'/dashboard?getname=true');
-        exit;
-    }
-}
 get_footer();
 ?>

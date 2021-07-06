@@ -73,19 +73,32 @@ $user_name = $usermeta['first_name'][0];
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/cunsulations">
-                                <i class="fas fa-chart-bar" style="padding: 0 0 0 10px;"></i>مشاوره اختصاصی</a>
+                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره اختصاصی</a>
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/free-consulation">
-                                <i class="fas fa-table" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
+                                <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/my-account/files/">
-                                <i class="fas fa-calendar-alt" style="padding: 0 0 0 10px;"></i>فایل های مشاوره</a>
+                                <i class="far fa-copy" style="padding: 0 0 0 10px;"></i>فایل های من</a>
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/my-account/orders">
-                                <i class="fas fa-map-marker-alt" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
+                                <i class="fas fa-history" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
+                                
+                        </li>
+                        <li>
+                            <a href="https://visaatlantis.com/contact-us/">
+                                <i class="fa fa-phone" style="padding: 0 0 0 10px;"></i>تماس با ما</a>
+                        </li>
+                        <li>
+                            <a href="https://visaatlantis.com/about/">
+                                <i class="fas fa-info" style="padding: 0 0 0 10px;"></i>درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="https://visaatlantis.com/">
+                                <i class="fas fa-home" style="padding: 0 0 0 10px;"></i>صفحه اصلی سایت</a>
                         </li>
                     </ul>
                 </div>
@@ -109,19 +122,33 @@ $user_name = $usermeta['first_name'][0];
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/cunsulations" style="float:right;">
-                                <i class="fas fa-chart-bar" style="padding: 0 0 0 10px;"></i>مشاوره اختصاصی</a>
+                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره اختصاصی</a>
+                                
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/free-consulation" style="float:right;">
-                                <i class="fas fa-table" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
+                                <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/my-account/files/" style="float:right;">
-                                <i class="far fa-check-square" style="padding: 0 0 0 10px;"></i>فایل های مشاوره</a>
+                                <i class="far fa-copy" style="padding: 0 0 0 10px;"></i>فایل های من</a>
+
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/my-account/orders" style="float:right;">
-                                <i class="fas fa-calendar-alt" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
+                                <i class="fas fa-history" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
+                        </li>
+                        <li>
+                            <a href="https://visaatlantis.com/contact-us/">
+                                <i class="fa fa-phone" style="padding: 0 0 0 10px;"></i>تماس با ما</a>
+                        </li>
+                        <li>
+                            <a href="https://visaatlantis.com/about/">
+                                <i class="fas fa-info" style="padding: 0 0 0 10px;"></i>درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="https://visaatlantis.com/">
+                                <i class="fas fa-home" style="padding: 0 0 0 10px;"></i>صفحه اصلی سایت</a>
                         </li>
                     </ul>
                 </nav>

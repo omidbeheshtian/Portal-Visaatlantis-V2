@@ -1,15 +1,11 @@
 <?php
-get_header();
 get_template_part('user');
 $userdata = wp_get_current_user();
 $userID = $userdata->ID;
 $num = $userdata->user_login;
 // $nameportal = $usermeta['first_name'][0];
-
 $usermeta = get_user_meta($userID);
-
-if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
-
+if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="section__content section__content--p30">
@@ -23,15 +19,14 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                         </div>
                         <div class="row m-t-25">
                             <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c1">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i style="font-size:35px;" class="zmdi zmdi-account-o"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2 style="font-size:23px;">سوابق پرداخت</h2>
-                                            </div>
+
+                                                <i style="font-size:35px; float:right;" class="fas fa-history"></i>
+
+                                                <h2 style="font-size:23px; text-align:right; clear:both; padding-top:10px;">سوابق پرداخت</h2>
+
                                         </div>
                                         <div class="overview-chart">
 
@@ -40,15 +35,15 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c2">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i style="font-size:35px;" class="zmdi zmdi-shopping-cart"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2 style="font-size:23px;">فایل های من</h2>
-                                            </div>
+
+                                                <i style="font-size:35px; float:right;" class="far fa-copy"></i>
+
+
+                                                <h2 style="font-size:23px; text-align:right; clear:both; padding-top:10px;">فایل های من</h2>
+
                                         </div>
                                         <div class="overview-chart">
 
@@ -57,31 +52,29 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c3">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i style="font-size:20px;" class="zmdi zmdi-calendar-note"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2 style="font-size:15px;">مشاوره آنلاین (رایگان)</h2>
-                                            </div>
-                                        </div>
+                                        
+
+                                                <i style="font-size:35px; float:right;" class="far fa-comments"></i>
+
+                                                <h2 style="font-size:23px; text-align:right; clear:both; padding-top:10px;">مشاوره آنلاین (رایگان)</h2>
+
+                                        
                                         <div class="overview-chart">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c4">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i style="font-size:20px;" class="zmdi zmdi-money"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2 style="font-size:15px;">رزرو وقت مشاوره تخصصی</h2>
-                                            </div>
+
+                                                <i style="font-size:35px; float:right;" class="far fa-calendar-check"></i>
+
+                                                <h2 style="font-size:23px; text-align:right; clear:both; padding-top:10px;">رزرو وقت مشاوره تخصصی</h2>
+
                                         </div>
                                         <div class="overview-chart">
                                             
@@ -110,43 +103,31 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                         </div>
                         <div class="row m-t-25">
                             <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c1">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i style="font-size:35px;padding:0px 0px 30px 0px;" class="zmdi zmdi-account-o"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2 style="font-size:23px;">راه های ارتباط</h2>
-                                            </div>
+                                                <i style="font-size:35px; color:#1976D2; float:right;" class="zmdi zmdi-account-o"></i>
+                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#000; text-align:right;;">راه های ارتباط</h2>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c2">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i style="font-size:35px;padding:0px 0px 30px 0px;" class="zmdi zmdi-shopping-cart"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2 style="font-size:23px;">همکاری</h2>
-                                            </div>
+                                                <i style="font-size:35px; color:#1976D2; float:right;" class="zmdi zmdi-shopping-cart"></i>
+                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#000; text-align:right;">همکاری</h2>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c3">
+                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i style="font-size:35px;" class="zmdi zmdi-calendar-note"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px;">اینستاگرام</h2>
-                                            </div>
+                                                <i style="font-size:35px; color:#1976D2; float:right;" class="zmdi zmdi-calendar-note"></i>
+                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#000; text-align:right;">اینستاگرام</h2>
                                         </div>
                                     </div>
                                 </div>
