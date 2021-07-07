@@ -251,7 +251,7 @@ if (function_exists('register_sidebar')) {
 		'id'   => 'news',
 		'description'   => 'آخرین اخبار مجموعه ویزاآتلانتیس',
 		'before_widget' => '',
-		'before_title'  => '<h3 class="title-2 tm-b-5">',
+		'before_title'  => '<hr><h3 class="title-2 tm-b-5" style="font-size:17px">',
 		'after_title'   => '</h3><hr>',
 		'after_widget'  => ''
 	));

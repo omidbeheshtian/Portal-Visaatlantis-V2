@@ -78,6 +78,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                         <div class="col-lg-3">
                                 <div class="au-card chart-percent-card">
                                     <div class="au-card-inner">
+                                        <h3 class="title-2 tm-b-5">آخرین اخبار مجموعه</h3>
                                         <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('news')) : else : ?><?php endif; ?>
                                     </div>
                                 </div>
