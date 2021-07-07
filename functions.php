@@ -245,4 +245,15 @@ if (function_exists('register_sidebar')) {
 	</div>'
 	));
 }
+if (function_exists('register_sidebar')) {
+	register_sidebar(array(
+		'name' => 'آخرین اخبار',
+		'id'   => 'news',
+		'description'   => 'آخرین اخبار مجموعه ویزاآتلانتیس',
+		'before_widget' => '',
+		'before_title'  => '<h3 class="title-2 tm-b-5">',
+		'after_title'   => '</h3><hr>',
+		'after_widget'  => ''
+	));
+}
 ?>

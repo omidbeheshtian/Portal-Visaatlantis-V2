@@ -78,8 +78,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                         <div class="col-lg-3">
                                 <div class="au-card chart-percent-card">
                                     <div class="au-card-inner">
-                                        <h3 class="title-2 tm-b-5"> آخرین اخبار مجموعه</h3>
-                                        <br><br><br><br><br><br><br><br><br><br><br>
+                                        <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('news')) : else : ?><?php endif; ?>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +87,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                         <div class="row m-t-25">
                             <div class="col-sm-6 col-lg-4">
                                 <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
-                                    <a href="https://portal.visaatlantis.com/dashboard/cunsulations" class="omidbeheshtian">
+                                    <a href="https://visaatlantis.com/contact-us/" class="omidbeheshtian">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                                 <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fa fa-phone"></i>
@@ -100,7 +99,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                             </div>
                             <div class="col-sm-6 col-lg-4">
                                 <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
-                                    <a href="https://portal.visaatlantis.com/dashboard/cunsulations" class="omidbeheshtian">
+                                    <a href="#" class="omidbeheshtian">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                                 <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fa fa-handshake-o"></i>
@@ -112,7 +111,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                             </div>
                             <div class="col-sm-6 col-lg-4">
                                 <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
-                                    <a href="https://portal.visaatlantis.com/dashboard/cunsulations" class="omidbeheshtian">
+                                    <a href="https://instagram.com/visaatlantis" class="omidbeheshtian">
                                     <div class="overview__inner">
                                             <div class="overview-box clearfix">
                                                     <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fab fa-instagram"></i>
