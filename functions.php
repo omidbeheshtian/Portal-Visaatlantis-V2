@@ -126,41 +126,56 @@ add_action( 'user_register', 'auto_login_new_user' );
         function omidweb_woocommerce_password( $strength ) {
         return 0;
         }
-        // custom login page in wordpress
-        function wpb_login_logo() { ?>
-            <style type="text/css">
-                #login h1 a, .login h1 a {
-                    background-image: url(http://path/to/your/custom-logo.png);
-                height:100px;
-                width:300px;
-                background-size: 300px 100px;
-                background-repeat: no-repeat;
-                padding-bottom: 10px;
-                }
-            </style>
-        <?php }
-        add_action( 'login_enqueue_scripts', 'wpb_login_logo' );
-        //change logo link in login page
-        function wpb_login_logo_url() {
-            return home_url();
-        }
-        add_filter( 'login_headerurl', 'wpb_login_logo_url' );
-        function wpb_login_logo_url_title() {
-            return 'Your Site Name and Info';
-        }
-        add_filter( 'login_headertitle', 'wpb_login_logo_url_title' );
-        // read custom css page for wp login
-        function my_custom_login_stylesheet() {
-            wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/css/style-login.css' );
-        }
-        //This loads the function above on the login page
-        add_action( 'login_enqueue_scripts', 'my_custom_login_stylesheet' );
-        //error login page
-        function login_error_override()
-        {
-            return 'Incorrect login details.';
-        }
-        add_filter('login_errors', 'login_error_override');
+      // custom login page in wordpress
+
+      function wpb_login_logo() { ?>
+        <style type="text/css">
+            #login h1 a, .login h1 a {
+            background-image: url('https://omidbeheshtian.ir/wp-content/uploads/2021/07/لوگو-امید-بهشتیان.png');
+            height:235px;
+            width:auto;
+            margin-top:-100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 10px;
+            z-index: 9999;
+            }
+        </style>
+    <?php }
+    add_action( 'login_enqueue_scripts', 'wpb_login_logo' );
+
+    //change logo link in login page
+
+    function wpb_login_logo_url() {
+        return 'https://omidbeheshtian.ir';
+    }
+    add_filter( 'login_headerurl', 'wpb_login_logo_url' );
+     
+    function wpb_login_logo_url_title() {
+        return 'Omid Beheshtian Website';
+    }
+    add_filter( 'login_headertitle', 'wpb_login_logo_url_title' );
+
+
+    // read custom css page for wp login
+
+    function my_custom_login_stylesheet() {
+        wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/css/style-login.css' );
+    }
+
+    //This loads the function above on the login page
+    add_action( 'login_enqueue_scripts', 'my_custom_login_stylesheet' );
+
+    //error login page
+
+    function login_error_override()
+    {
+        return 'اطلاعات وارد شده برای ورود اشتباه است.';
+    }
+    add_filter('login_errors', 'login_error_override');
+
+
+
         // function woocommerce_support() {
         //     add_theme_support( 'woocommerce' );
         // }
