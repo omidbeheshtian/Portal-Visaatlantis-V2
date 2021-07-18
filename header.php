@@ -73,11 +73,11 @@ $user_name = $usermeta['first_name'][0];
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/cunsulations">
-                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره اختصاصی</a>
+                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره تخصصی</a>
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/free-consulation">
-                                <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
+                                <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره آنلاین</a>
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/my-account/files/">
@@ -122,12 +122,12 @@ $user_name = $usermeta['first_name'][0];
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/cunsulations" style="float:right;">
-                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره اختصاصی</a>
+                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره تخصصی</a>
                                 
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/free-consulation" style="float:right;">
-                                <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره رایگان</a>
+                                <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره آنلاین</a>
                         </li>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/my-account/files/" style="float:right;">
@@ -139,15 +139,15 @@ $user_name = $usermeta['first_name'][0];
                                 <i class="fas fa-history" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
                         </li>
                         <li>
-                            <a href="https://visaatlantis.com/contact-us/">
+                            <a href="https://visaatlantis.com/contact-us/" style="float:right;">
                                 <i class="fa fa-phone" style="padding: 0 0 0 10px;"></i>تماس با ما</a>
                         </li>
                         <li>
-                            <a href="https://visaatlantis.com/about/">
+                            <a href="https://visaatlantis.com/about/" style="float:right;">
                                 <i class="fas fa-info" style="padding: 0 0 0 10px;"></i>درباره ما</a>
                         </li>
                         <li>
-                            <a href="https://visaatlantis.com/">
+                            <a href="https://visaatlantis.com/" style="float:right;">
                                 <i class="fas fa-home" style="padding: 0 0 0 10px;"></i>صفحه اصلی سایت</a>
                         </li>
                     </ul>
@@ -186,12 +186,6 @@ $user_name = $usermeta['first_name'][0];
                                                     <span class="email"><?php echo $num; ?></span>
                                                 </div>
                                             </div>
-                                            <!-- <div class="account-dropdown__body">
-                                                <div class="account-dropdown__item">
-                                                    <a href="#" style="float:right; position:fixed;">
-                                                        <i class="zmdi zmdi-account" style="padding: 0 0 0 10px;"></i>اطلاعات حساب</a>
-                                                </div>
-                                            </div> -->
                                             <div class="account-dropdown__footer">
                                                 <a href="<?php echo wp_logout_url(home_url()); ?>" style="float:right;">
                                                     <i class="zmdi zmdi-power" style="padding: 0 0 0 10px;"></i>خروج</a>

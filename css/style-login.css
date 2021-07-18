@@ -1,38 +1,38 @@
 body.login div#login form#loginform p.submit input#wp-submit {
-  background-color:#055326 !important;
-  font-family: lalezar !important;
-}
+    background-color:#055326 !important;
+    font-family: lalezar !important;
+  }
 
-body.login {
-  background-image: url('../pics/login-omidbeheshtian.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
+  body.login {
+    background-image: url('../pics/login-omidbeheshtian.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
 
-body.login div#login form#loginform input {
-  font-size: 15px;
-  font-family: lalezar !important;
-  color: #555555;
-}
+  body.login div#login form#loginform input {
+    font-size: 15px;
+    font-family: lalezar !important;
+    color: #555555;
+  }
 
-body.login div#login form#loginform p.submit input#wp-submit {
-  background-color:#055326 !important;
-  color: #ffffff;
-  font-family: lalezar !important;
-  border: 1px solid #055326;
-  margin: 10px 10px 10px 10px;
-}
+  body.login div#login form#loginform p.submit input#wp-submit {
+    background-color:#055326 !important;
+    color: #ffffff;
+    font-family: lalezar !important;
+    border: 1px solid #055326;
+    margin: 10px 10px 10px 10px;
+  }
 
-#loginform{
-  border-radius: 12px;
-}
+  #loginform{
+    border-radius: 12px;
+  }
 
-label,a{
-  font-family: lalezar !important;
-}
+  label,a{
+    font-family: lalezar !important;
+  }
 
-#login_error{
-  font-family: lalezar !important;
-}
+  #login_error{
+    font-family: lalezar !important;
+  }

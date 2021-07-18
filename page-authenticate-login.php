@@ -1,3 +1,5 @@
+<?php get_template_part('user');
+if(!$user_ID){ ?>
 <!DOCTYPE html>
 <html lang="fa">
    <head>
@@ -15,13 +17,6 @@
       <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/style.css" rel="stylesheet" />
    </head>
    <body>
-<?php
-get_template_part('user');
-	if(!$user_ID){
-?>
-
-
-
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100" style="border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 140px;margin-bottom: 0px;">
@@ -61,12 +56,8 @@ get_template_part('user');
 	</div>
 	<?php }
 	if($user_ID){
-		wp_redirect(site_url().'/profile');
+		wp_redirect(site_url().'/dashboard');
 		exit;
 	}
 	get_footer();
 	?>
-
-	<!-- scripts -->
-
-	<!-- / scripts -->

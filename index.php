@@ -1,8 +1,11 @@
+<?php
+get_template_part('user');
+if (!$user_ID) {  ?>
 <!DOCTYPE html>
 <html lang="fa">
    <head>
       <title><?php the_title(); ?></title>
-      <meta charset="utf-8">
+      <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="author" content="Omid Beheshtian">
@@ -15,12 +18,6 @@
       <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/style.css" rel="stylesheet" />
    </head>
    <body>
-<?php
-get_template_part('user');
-
-
-
-if (!$user_ID) {  ?>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100" style="border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 140px;margin-bottom: 0px;">
@@ -69,14 +66,11 @@ if (!$user_ID) {  ?>
 		</div>
 	</div>
 
-<?php }?>
-
-<?php if($user_ID) {
+<?php }
+if($user_ID) {
 	wp_redirect(site_url().'/dashboard');
-                exit;
+    exit;
 }
 get_footer();?>
-
 	</body>
-
 	</html>

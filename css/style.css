@@ -676,3 +676,6 @@ h2{
 .wcdt-digitheme ul{
  text-align:right !important;
 }
+.woocommerce-error{
+    text-align:right !important;
+}

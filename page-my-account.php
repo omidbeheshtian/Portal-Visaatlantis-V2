@@ -1,5 +1,4 @@
 <?php
-get_header();
 get_template_part('user');
 $userdata = wp_get_current_user();
 $userID = $userdata->ID;
@@ -8,7 +7,7 @@ $nameportal = $usermeta['first_name'][0];
 
 $usermeta = get_user_meta($userID);
 
-if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
+if ($user_ID && $usermeta['first_name'][0] != NULL) { get_header(); ?>
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -22,7 +21,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  ?>
                             </div>
                     </div>
                 <div class="copyright">
-                    <p></p> <a href="https://omidbeheshtian.ir">Omid Beheshtian</a> Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p>
+                    <p style="float:left;">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
                 </div>
                 </div>
             <!-- END MAIN CONTENT-->
