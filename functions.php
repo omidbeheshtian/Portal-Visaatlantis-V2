@@ -21,18 +21,24 @@
             $_SESSION['userdata-number'] = $phonenumber;
             $_SESSION['userdata-verifykey'] = $verify;
 
-            $username = "09123789821";
-            $password = '4580098013';
-            $from = "+983000505";
-            $pattern_code = "d398x3o5b6";
-            $to = array("$phonenumber");
-            $input_data = array("code" => "$verify", "name" => "$null");
-            $url = "https://ippanel.com/patterns/pattern?username=" . $username . "&password=" . urlencode($password) . "&from=$from&to=" . json_encode($to) . "&input_data=" . urlencode(json_encode($input_data)) . "&pattern_code=$pattern_code";
-            $handler = curl_init($url);
-            curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
-            curl_setopt($handler, CURLOPT_POSTFIELDS, $input_data);
-            curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
-            $response = curl_exec($handler);
+            // $username = "09123789821";
+            // $password = '4580098013';
+            // $from = "+983000505";
+            // $pattern_code = "d398x3o5b6";
+            // $to = array("$phonenumber");
+            // $input_data = array("code" => "$verify", "name" => "$null");
+            // $url = "https://ippanel.com/patterns/pattern?username=" . $username . "&password=" . urlencode($password) . "&from=$from&to=" . json_encode($to) . "&input_data=" . urlencode(json_encode($input_data)) . "&pattern_code=$pattern_code";
+            // $handler = curl_init($url);
+            // curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
+            // curl_setopt($handler, CURLOPT_POSTFIELDS, $input_data);
+            // curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
+            // $response = curl_exec($handler);
+            
+            include("RemotePost.php");
+
+            $remotePost=new RemotePost("visaatlantis","4542469atlantis");
+            echo ($remotePost->SendCustomMessage("$phonenumber","خوش آمدید رمز ورود شما : $verify  ویزاآتلانتیس"));
+            
             wp_redirect('authenticate');
     }
  }
@@ -69,18 +75,24 @@ function vaauth($code){
         // $sms = $namesms->first_name;
         if($phonenumberlogin == $key->user_login){
             
-            $username = "09123789821";
-            $password = '4580098013';
-            $from = "+983000505";
-            $pattern_code = "d398x3o5b6";
-            $to = array("$phonenumberlogin");
-            $input_data = array("code" => "$verifylogin", "name" => "");
-            $url = "https://ippanel.com/patterns/pattern?username=" . $username . "&password=" . urlencode($password) . "&from=$from&to=" . json_encode($to) . "&input_data=" . urlencode(json_encode($input_data)) . "&pattern_code=$pattern_code";
-            $handler = curl_init($url);
-            curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
-            curl_setopt($handler, CURLOPT_POSTFIELDS, $input_data);
-            curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
-            $response = curl_exec($handler);
+            // $username = "09123789821";
+            // $password = '4580098013';
+            // $from = "+983000505";
+            // $pattern_code = "d398x3o5b6";
+            // $to = array("$phonenumberlogin");
+            // $input_data = array("code" => "$verifylogin", "name" => "");
+            // $url = "https://ippanel.com/patterns/pattern?username=" . $username . "&password=" . urlencode($password) . "&from=$from&to=" . json_encode($to) . "&input_data=" . urlencode(json_encode($input_data)) . "&pattern_code=$pattern_code";
+            // $handler = curl_init($url);
+            // curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
+            // curl_setopt($handler, CURLOPT_POSTFIELDS, $input_data);
+            // curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
+            // $response = curl_exec($handler);
+            
+            include("RemotePost.php");
+
+            $remotePost=new RemotePost("visaatlantis","4542469atlantis");
+            echo ($remotePost->SendCustomMessage("$phonenumberlogin","خوش آمدید رمز ورود شما : $verifylogin   ویزاآتلانتیس"));
+            
             reset_password( $key->ID, $verifylogin );
             wp_set_password( $verifylogin, $key->ID );
             wp_redirect(site_url().'/authenticate-login');

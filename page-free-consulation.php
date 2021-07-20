@@ -68,7 +68,7 @@ get_template_part('ai');
                                                 <input type="radio" id="z2" name="madrak" value="n" onclick="madrakbegir()">
                                                 <label for="z2">ندارم</label>
                                                 <div id="madraknomre" style="display:none;">
-                                                    <input class="input100" type="text" placeholder="نمره مدرک" name="nomre">
+                                                    <input type="text" placeholder="نمره مدرک" name="nomre" style="border-radius:12px; padding:3px;">
                                                 </div>
                                                 <div id="madrakbegir" style="display:none;">
                                                         <input type="checkbox" name="madrakbegirim" id="madrakbegirim">
@@ -119,11 +119,14 @@ get_template_part('ai');
                                                 <p class="omidbeheshtianp">فرزند:</p>
                                                 <input type="radio" id="yc" name="child" value="yes" onclick="tedadfarzzand()">
                                                     <label for="yc">دارم</label>
-                                                    <div id="tedadfarzand" style="display:none;">
-                                                        <input type="text" name="tedadfarzand" placeholder="تعداد فرزندان و سن آنها">
-                                                    </div>
-                                                    <input type="radio" id="nc" name="child" value="yes" onclick="tedadfarzandhide()">
+                                                    <input type="radio" id="nc" name="child" value="no" onclick="tedadfarzandhide()">
                                                     <label for="nc">ندارم</label>
+                                                    <div id="tedadfarzand" style="display:none;">
+                                                    <p class="omidbeheshtianp">تعداد فرزند:</p>
+                                                        <input type="number" name="tedadfarzand" style="border-radius:12px; padding:3px;">
+                                                        <p class="omidbeheshtianp">سن فرزند:</p>
+                                                        <input type="number" name="senfarzand" style="border-radius:12px; padding:3px;">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div id="akhzvisa">
@@ -147,10 +150,9 @@ get_template_part('ai');
                                                         </div>
                                                     </div>
                                             </div>
-                                        </div>
-                                        <div>
+                                            <div>
                                             <button class="login100-form-btn" name="send">ادامه</button>
-                                        </div>
+                                            </div>
                                     </form>
                                     
                                 </div>

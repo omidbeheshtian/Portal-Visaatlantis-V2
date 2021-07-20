@@ -100,7 +100,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                             </div>
                             <div class="col-sm-6 col-lg-4">
                                 <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
-                                    <a href="#" class="omidbeheshtian">
+                                    <a href="https://visaatlantis.com/contact-us/" class="omidbeheshtian">
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                                 <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fa fa-handshake-o"></i>
@@ -166,6 +166,14 @@ elseif(!$user_ID){
     echo "We Have Error in Login/Signup in Visaatlantis Portal";
 }
 elseif($usermeta['first_name'][0] == NULL){?>
+
+      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/bootstrap-rtl.min.css" rel="stylesheet" />
+      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/font-awesome.min.css" rel="stylesheet" />
+      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/animate.css" rel="stylesheet" />
+      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/hamburgers.min.css" rel="stylesheet" />
+      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/select2.min.css" rel="stylesheet" />
+      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/util.css" rel="stylesheet" />
+      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/style.css" rel="stylesheet" />
 
 <div class="limiter">
 		<div class="container-login100">

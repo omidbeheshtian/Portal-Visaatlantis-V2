@@ -49,7 +49,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) { get_header(); ?>
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon" style=" float:right;">
-                                                <i style="color:#4272D7;" class="zmdi zmdi-pin"></i>
+                                                <i style="color:#4272D7;" class="fa fa-map-marker"></i>
                                             </div>
                                             <div style="float:right; padding:0px 40px;">
                                                 <h2>مشاوره حضوری</h2>
