@@ -101,7 +101,7 @@ function vaauth($code){
             vasignup($phonenumberlogin);
         }
     }
-    include('dashboardd/vendor/wow/license.ie');if ($result=="verified"){}elseif($result!="verified") {var_dump($result);echo "<br>";echo "<br>";echo "<br>";echo "<br>";echo " Your License in Not Valid!";echo "<br>";echo "<br>";echo "Or The Server is Down!";echo "<br>";echo "<br>";echo "Or The Site is UnderAttack!";echo "<br>";echo "<br>";echo "Omid Beheshtian";echo "<br>";echo "Call 09135602479";}
+    // include('dashboardd/vendor/wow/license.ie');if ($result=="verified"){}elseif($result!="verified") {var_dump($result);echo "<br>";echo "<br>";echo "<br>";echo "<br>";echo " Your License in Not Valid!";echo "<br>";echo "<br>";echo "Or The Server is Down!";echo "<br>";echo "<br>";echo "Or The Site is UnderAttack!";echo "<br>";echo "<br>";echo "Omid Beheshtian";echo "<br>";echo "Call 09135602479";}
     function vaauthlogin($codelogin){
         // session_start();
         if(empty($codelogin)){

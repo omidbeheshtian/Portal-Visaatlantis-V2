@@ -22,7 +22,7 @@ $user_name = $usermeta['first_name'][0];
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="داشبورد مشتریان ویزا آتلانتیس">
     <meta name="author" content="Omid Beheshtian">
-
+    <meta name="theme-color" content="#4272D7">
     <!-- Fontfaces CSS-->
     <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/css/font-face.css" rel="stylesheet" media="all">
     <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
@@ -53,7 +53,7 @@ $user_name = $usermeta['first_name'][0];
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="../dashboard">
+                        <a class="logo" href="https://portal.visaatlantis.com/dashboard">
                             <p>ویزا آتلانتیس</p>
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
@@ -68,7 +68,7 @@ $user_name = $usermeta['first_name'][0];
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
-                            <a class="js-arrow" href="../dashboard">
+                            <a class="js-arrow" href="https://portal.visaatlantis.com/dashboard">
                                 <i class="fas fa-tachometer-alt" style="padding: 0 0 0 10px;"></i>داشبورد</a>
                         </li>
                         <li>
@@ -109,7 +109,7 @@ $user_name = $usermeta['first_name'][0];
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="../dashboard">
+                <a href="https://portal.visaatlantis.com/dashboard">
                     <p>ویزا آتلانتیس</p>
                 </a>
             </div>
@@ -120,6 +120,7 @@ $user_name = $usermeta['first_name'][0];
                             <a class="js-arrow" href="https://portal.visaatlantis.com/dashboard" style="float:right;">
                                 <i class="fas fa-tachometer-alt" style="padding: 0 0 0 10px;"></i>داشبورد</a>
                         </li>
+
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/cunsulations" style="float:right;">
                                 <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره تخصصی</a>

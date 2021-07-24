@@ -4,9 +4,18 @@ $userdata = wp_get_current_user();
 $userID = $userdata->ID;
 $num = $userdata->user_login;
 $nameportal = $usermeta['first_name'][0];
-
 $usermeta = get_user_meta($userID);
-
+    // $user_id = get_current_user_id();
+    // $customer = new WC_Customer( $user_id );
+    // $last_order = $customer->get_last_order();
+    // $order_id     = $last_order->get_id();
+    // $order_data   = $last_order->get_data();
+    // $order_status = $last_order->get_status();
+    // $order_key = $order_data["order_key"];
+// if($order_status != "completed"){
+//      wp_redirect("https://portal.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key");
+//      exit;
+// }
 if ($user_ID && $usermeta['first_name'][0] != NULL) { get_header(); ?>
             <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -49,7 +58,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) { get_header(); ?>
                                     <div class="overview__inner">
                                         <div class="overview-box clearfix">
                                             <div class="icon" style=" float:right;">
-                                                <i style="color:#4272D7;" class="fa fa-map-marker"></i>
+                                                <i style="color:#4272D7;" class="fas fa-map-marker-alt"></i>
                                             </div>
                                             <div style="float:right; padding:0px 40px;">
                                                 <h2>مشاوره حضوری</h2>
