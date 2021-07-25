@@ -1,0 +1,42 @@
+.account-item > .content > a {
+    color:#333333;
+    font-weight:500;
+    text-transform:capitalize;
+    width:200px;
+  }
+  .woocommerce-message,.woocommerce-error{
+      display:none;
+  }
+  .woocommerce-notice,.woocommerce-notice--success,.woocommerce-thankyou-order-received{
+      text-align:right;
+      padding-bottom:25px;
+  }
+  .woocommerce-column__title,.woocommerce-order-details__title,p{
+      text-align:right;
+  }
+  .textwidget,.custom-html-widget{
+      text-align:right;
+      font-size:14px;
+  }
+  p{
+      text-align:left;
+  }
+  #maghsad,#madrak,#madrakgheyr,#sabeghesafar,#taahol,#akhzvisa{
+      text-align:right;
+  }
+  .input100{
+      padding:5px;
+      margin-bottom: 5px;
+  }
+  .omidbeheshtianp{
+      text-align:right;
+  }
+  .digitheme-head-date{
+      color:#000000 !important;
+  }
+  .label,.selected_time{
+      text-align:center;
+  }
+  .digikala_mobile_selection{
+      display:block;
+  }
