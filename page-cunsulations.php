@@ -79,7 +79,7 @@ if($order_status != "completed" && $order_status !="cancelled" && $order_status 
                             </div>
 
                         </div>
-                    </div>
+                    <!--</div>-->
 
                 <div class="copyright">
                               <p style="text-align:left;" class="cromid">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
@@ -88,8 +88,6 @@ if($order_status != "completed" && $order_status !="cancelled" && $order_status 
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
         </div>
-
-    </div>
 
     <!-- Jquery JS-->
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/jquery-3.2.1.min.js"></script>
