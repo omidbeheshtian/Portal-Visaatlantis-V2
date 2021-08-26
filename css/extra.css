@@ -41,7 +41,7 @@
       display:block;
   }
   
-  .woocommerce-table,.woocommerce-table--order-details{
+  .woocommerce-table{
       display:none;
   }
   .woocommerce-order-overview__email,.email{
@@ -80,4 +80,8 @@
   }
   bdi{
       font-weight:500;
+  }
+  .emailb{
+      font-size:13px;
+      font-weight: 300;
   }
