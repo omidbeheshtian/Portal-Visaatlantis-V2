@@ -64,3 +64,20 @@
   .woocommerce-order-overview__payment-method,.method{
       text-align:right;
   }
+  .woocommerce-info{
+      text-align:right;
+  }
+  label{
+      color:#263238;
+  }
+  .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+      background-color:#f66149;
+      font-weight: 500;
+  }
+  th,td{
+      color:#263238;
+      font-weight:500 !important;
+  }
+  bdi{
+      font-weight:500;
+  }
