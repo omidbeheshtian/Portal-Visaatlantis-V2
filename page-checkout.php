@@ -26,7 +26,7 @@ $order_status = $last_order->get_status();
 
                             <div class="row m-t-25">
                                 <div class="col-sm-6 col-lg-12">
-                                    <div class="overview-item overview-item--c4" >
+                                    <div class="overview-item overview-item--c2" >
                                         <div class="overview__inner" >
                                             <div class="overview-chart" style="z-index: 999;">
                                             <?php the_content(); ?>
@@ -38,9 +38,9 @@ $order_status = $last_order->get_status();
                                             <div class="overview-chart"></div>
                                             <div class="overview-chart"></div>
                                             <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
+                                            <!--<div class="overview-chart"></div>-->
+                                            <!--<div class="overview-chart"></div>-->
+                                            <!--<div class="overview-chart"></div>-->
 
                                         </div>
                                     </div>
