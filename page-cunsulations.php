@@ -7,11 +7,14 @@ $num = $userdata->user_login;
     // $user_id = get_current_user_id();
     $customer = new WC_Customer( $userID );
     $last_order = $customer->get_last_order();
-    $order_id     = $last_order->get_id();
-    $order_data   = $last_order->get_data();
-    $order_status = $last_order->get_status();
+    if($last_order != NULL){
+$order_id     = $last_order->get_id();
+$order_data   = $last_order->get_data();
+$order_status = $last_order->get_status();
+}
     $order_key = $order_data["order_key"];
-if($order_status != "completed"){
+    
+if($order_status != "completed" && $order_status !="cancelled" && $order_status !="pending" && $order_status !=NULL){
      wp_redirect("https://portal.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key");
      exit;
 }
@@ -25,6 +28,7 @@ if($order_status != "completed"){
                                 <div class="overview-wrap">
                                     <h2 class="title-1">رزرو وقت مشاوره</h2>
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="row m-t-25">
@@ -78,7 +82,7 @@ if($order_status != "completed"){
                     </div>
 
                 <div class="copyright">
-                         <p style="float:left;">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
+                              <p style="text-align:left;" class="cromid">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
                 </div>
             </div>
             <!-- END MAIN CONTENT-->

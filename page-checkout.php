@@ -7,9 +7,11 @@ $usermeta = get_user_meta($userID);
     // $user_id = get_current_user_id();
     $customer = new WC_Customer( $userID );
     $last_order = $customer->get_last_order();
-    $order_id     = $last_order->get_id();
-    $order_data   = $last_order->get_data();
-    $order_status = $last_order->get_status();
+    if($last_order != NULL){
+$order_id     = $last_order->get_id();
+$order_data   = $last_order->get_data();
+$order_status = $last_order->get_status();
+}
     $order_key = $order_data["order_key"];
 // if($order_status != "completed"){
 //      wp_redirect("https://portal.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key");
@@ -46,7 +48,7 @@ $usermeta = get_user_meta($userID);
                             </div>
                     </div>
                 <div class="copyright">
-                     <p style="float:left;">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
+                          <p style="text-align:left;" class="cromid">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
                 </div>
                 </div>
             <!-- END MAIN CONTENT-->

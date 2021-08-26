@@ -52,7 +52,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) { get_header(); ?>
                             </div>
                     </div>
                 <div class="copyright">
-                    <p></p> <a href="https://omidbeheshtian.ir">Omid Beheshtian</a> Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p>
+                    <p style="text-align:left;" class="cromid">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
                 </div>
                 </div>
             <!-- END MAIN CONTENT-->

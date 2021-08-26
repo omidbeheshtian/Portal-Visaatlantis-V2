@@ -160,8 +160,7 @@ get_template_part('ai');
                         </div>
                     </div>
                     <div class="copyright">
-                         <p style="float:left;">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
-                    </div>
+                              <p style="text-align:left;" class="cromid">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
                 </div>
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->

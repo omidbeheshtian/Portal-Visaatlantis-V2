@@ -4,6 +4,16 @@ $userID = $userdata->ID;
 $num = $userdata->user_login;
 $usermeta = get_user_meta($userID);
 $user_name = $usermeta['first_name'][0];
+$customer = new WC_Customer( $userID );
+$last_order = $customer->get_last_order();
+if($last_order != NULL){
+$order_id     = $last_order->get_id();
+$order_data   = $last_order->get_data();
+$order_status = $last_order->get_status();
+}
+
+$order_key = $order_data["order_key"];
+$valuemoshavere = "https://portal.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key";
 ?>
 <!DOCTYPE html>
 <html lang="fa">
@@ -120,12 +130,19 @@ $user_name = $usermeta['first_name'][0];
                             <a class="js-arrow" href="https://portal.visaatlantis.com/dashboard" style="float:right;">
                                 <i class="fas fa-tachometer-alt" style="padding: 0 0 0 10px;"></i>داشبورد</a>
                         </li>
-
+                        <?php if($order_status != "completed" && $order_status !="cancelled" && $order_status !="pending" && $order_status !=NULL){ ?>
+                        <li>
+                            <a href="<?php echo $valuemoshavere; ?>" style="float:right;">
+                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>اطلاعات مشاوره جاری شما</a>
+                        </li>
+                        <?php }else{ ?>
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/cunsulations" style="float:right;">
                                 <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره تخصصی</a>
                                 
                         </li>
+                        <?php } ?>
+                        
                         <li>
                             <a href="https://portal.visaatlantis.com/dashboard/free-consulation" style="float:right;">
                                 <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره آنلاین</a>
