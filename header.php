@@ -26,6 +26,7 @@ $valuemoshavere = "https://portal.visaatlantis.com/dashboard/checkout/order-rece
       <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/select2.min.css" rel="stylesheet" />
       <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/util.css" rel="stylesheet" />
       <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/style.css" rel="stylesheet" />
+      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/pics/icons/fav.png" rel="icon" type="image/png" />
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
