@@ -26,7 +26,7 @@ get_template_part('user');
 
 			<!-- input form -->
 			<form class="login100-form validate-form" method="POST" action="#">
-				<span class="login100-form-title">اعتبار سنجی</span>
+				<span class="login100-form-title">22222222اعتبار سنجی</span>
 
 				<!-- enter code-->
 				<div class="wrap-input100 validate-input" data-validate = "لطفا کد ارسالی خود را وارد کنید!">

@@ -41,7 +41,6 @@ body, html {
 
 /*---------------------------------------------*/
 a {
-	font-family: SourceSansPro-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -124,22 +123,20 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: SourceSansPro-Regular;
   font-size: 16px;
   line-height: 1.4;
   color: #999999;
 }
 
 .txt2 {
-  font-family: SourceSansPro-Regular;
   font-size: 16px;
   line-height: 1.4;
-  color: #4b2354;
+  color: #fff;
 }
 
 .hov1:hover {
-  color: #4b2354;
-  text-decoration: underline;
+  color: #fff;
+  /* text-decoration: underline; */
 }
 
 
@@ -162,7 +159,7 @@ iframe {
   background-size: cover;
   background-position: center;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .container-login100::before {
@@ -184,15 +181,13 @@ iframe {
 
 .wrap-login100 {
   width: 390px;
-  background: #fff;
-  border-radius: 10px;
+  background: rgb(73,69,208);
+  background: linear-gradient(90deg, rgba(73,69,208,1) 40%, rgba(67,16,150,1) 100%);
+  border-radius: 25px;
   overflow: hidden;
 
-  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 18px 3px #292929; 
+box-shadow: 0px 10px 18px 3px #292929;
 }
 
 
@@ -205,11 +200,11 @@ iframe {
 
 .login100-form-title {
   display: block;
-  font-family: SourceSansPro-Bold;
   font-size: 30px;
-  color: #4b2354;
+  color: #fff;
   line-height: 1.2;
   text-align: center;
+  text-shadow: -1px 4px 5px rgb(26, 26, 26);
 }
 
 /*------------------------------------------------------------------
@@ -223,7 +218,6 @@ iframe {
 }
 
 .input100 {
-  font-family: SourceSansPro-Bold;
   font-size: 16px;
   color: #4b2354;
   line-height: 1.2;
@@ -292,12 +286,10 @@ iframe {
   padding: 0 20px;
   min-width: 160px;
   height: 50px;
-  background-color: #bd59d4;
+  background-color: #fff;
   border-radius: 25px;
-
-  font-family: SourceSansPro-SemiBold;
   font-size: 14px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   line-height: 1.2;
   text-transform: uppercase;
 
@@ -314,7 +306,7 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background-color: #4b2354;
+  background-color: #fff;
   box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
   -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
   -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
@@ -356,8 +348,8 @@ iframe {
   padding: 0 45px 0 22px;
   pointer-events: none;
 
-  font-family: SourceSansPro-Bold;
-  font-size: 16px;
+
+  font-size: 14px;
   color: #fa4251;
   line-height: 1.2;
 }
