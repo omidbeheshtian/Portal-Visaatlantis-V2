@@ -283,4 +283,5 @@ if (function_exists('register_sidebar')) {
 		'after_widget'  => ''
 	));
 }
+add_role( "visaatlantis", "visaatlantis");
 ?>

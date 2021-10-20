@@ -15,7 +15,7 @@ $order_status = $last_order->get_status();
     $order_key = $order_data["order_key"];
     
 if($order_status != "completed" && $order_status !="cancelled" && $order_status !="pending" && $order_status !=NULL){
-     wp_redirect("https://portal.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key");
+     wp_redirect("https://test.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key");
      exit;
 }
 ?>
@@ -49,7 +49,7 @@ if($order_status != "completed" && $order_status !="cancelled" && $order_status 
 
                                         </div>
                                         <div class="overview-chart">
-                                            <a href="https://portal.visaatlantis.com/consulation/telephone/?add-to-cart=45" class="login-omidweb-product">رزرو</a>
+                                            <a href="https://test.visaatlantis.com/consulation/telephone/?add-to-cart=45" class="login-omidweb-product">رزرو</a>
                                         </div>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@ if($order_status != "completed" && $order_status !="cancelled" && $order_status 
 
                                         </div>
                                         <div class="overview-chart">
-                                            <a href="https://portal.visaatlantis.com/consulation/attendance/?add-to-cart=39" class="login-omidweb-product">رزرو</a>
+                                            <a href="https://test.visaatlantis.com/consulation/attendance/?add-to-cart=39" class="login-omidweb-product">رزرو</a>
                                         </div>
                                     </div>
                                 </div>

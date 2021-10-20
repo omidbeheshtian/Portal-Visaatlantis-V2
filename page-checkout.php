@@ -38,7 +38,7 @@ $order_status = $last_order->get_status();
                                             <div class="overview-chart"></div>
                                             <div class="overview-chart"></div>
                                             <div class="overview-chart"></div>
-                                            <!--<div class="overview-chart"></div>-->
+                                            <div class="overview-chart"></div>
                                             <!--<div class="overview-chart"></div>-->
                                             <!--<div class="overview-chart"></div>-->
 

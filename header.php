@@ -13,7 +13,7 @@ $order_status = $last_order->get_status();
 }
 
 $order_key = $order_data["order_key"];
-$valuemoshavere = "https://portal.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key";
+$valuemoshavere = "https://test.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key";
 ?>
 <!DOCTYPE html>
 <html lang="fa">
@@ -79,23 +79,23 @@ $valuemoshavere = "https://portal.visaatlantis.com/dashboard/checkout/order-rece
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
-                            <a class="js-arrow" href="https://portal.visaatlantis.com/dashboard">
+                            <a class="js-arrow" href="https://test.visaatlantis.com/dashboard">
                                 <i class="fas fa-tachometer-alt" style="padding: 0 0 0 10px;"></i>داشبورد</a>
                         </li>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/cunsulations">
+                            <a href="https://test.visaatlantis.com/test/">
                                 <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره تخصصی</a>
                         </li>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/free-consulation">
+                            <a href="https://test.visaatlantis.com/dashboard/free-consulation">
                                 <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره آنلاین</a>
                         </li>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/my-account/files/">
+                            <a href="https://test.visaatlantis.com/dashboard/my-account/files/">
                                 <i class="far fa-copy" style="padding: 0 0 0 10px;"></i>فایل های من</a>
                         </li>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/my-account/orders">
+                            <a href="https://test.visaatlantis.com/dashboard/my-account/orders">
                                 <i class="fas fa-history" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
                                 
                         </li>
@@ -120,7 +120,7 @@ $valuemoshavere = "https://portal.visaatlantis.com/dashboard/checkout/order-rece
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="https://portal.visaatlantis.com/dashboard">
+                <a href="https://test.visaatlantis.com/dashboard">
                     <p>ویزا آتلانتیس</p>
                 </a>
             </div>
@@ -128,7 +128,7 @@ $valuemoshavere = "https://portal.visaatlantis.com/dashboard/checkout/order-rece
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a class="js-arrow" href="https://portal.visaatlantis.com/dashboard" style="float:right;">
+                            <a class="js-arrow" href="https://test.visaatlantis.com/dashboard" style="float:right;">
                                 <i class="fas fa-tachometer-alt" style="padding: 0 0 0 10px;"></i>داشبورد</a>
                         </li>
                         <?php if($order_status != "completed" && $order_status !="cancelled" && $order_status !="pending" && $order_status !=NULL){ ?>
@@ -138,23 +138,23 @@ $valuemoshavere = "https://portal.visaatlantis.com/dashboard/checkout/order-rece
                         </li>
                         <?php }else{ ?>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/cunsulations" style="float:right;">
+                            <a href="https://test.visaatlantis.com/test/" style="float:right;">
                                 <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره تخصصی</a>
                                 
                         </li>
                         <?php } ?>
                         
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/free-consulation" style="float:right;">
+                            <a href="https://test.visaatlantis.com/dashboard/free-consulation" style="float:right;">
                                 <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره آنلاین</a>
                         </li>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/my-account/files/" style="float:right;">
+                            <a href="https://test.visaatlantis.com/dashboard/my-account/files/" style="float:right;">
                                 <i class="far fa-copy" style="padding: 0 0 0 10px;"></i>فایل های من</a>
 
                         </li>
                         <li>
-                            <a href="https://portal.visaatlantis.com/dashboard/my-account/orders" style="float:right;">
+                            <a href="https://test.visaatlantis.com/dashboard/my-account/orders" style="float:right;">
                                 <i class="fas fa-history" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
                         </li>
                         <li>
@@ -202,7 +202,7 @@ $valuemoshavere = "https://portal.visaatlantis.com/dashboard/checkout/order-rece
                                                     <h5 class="name">
                                                         <a href="#"><?php echo $user_name ?></a>
                                                     </h5>
-                                                    <span class="email"><?php echo $num; ?></span>
+                                                    <span class="emailb"><?php echo $num; ?></span>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">

@@ -112,7 +112,7 @@ if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
                             </div>
                             <div class="col-sm-6 col-lg-4">
                                 <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
-                                    <a href="https://instagram.com/visaatlantis" class="omidbeheshtian">
+                                    <a href="https://instagram.com/visa.atlantis" class="omidbeheshtian">
                                     <div class="overview__inner">
                                             <div class="overview-box clearfix">
                                                     <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fab fa-instagram"></i>

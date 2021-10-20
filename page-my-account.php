@@ -1,4 +1,7 @@
 <?php
+/*
+  Template name: ناحیه کاربری
+ */
 get_template_part('user');
 $userdata = wp_get_current_user();
 $userID = $userdata->ID;
