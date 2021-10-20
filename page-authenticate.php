@@ -1,65 +1,98 @@
 <?php
 get_template_part('user');
-	if(!$user_ID){
-?>
+if (!$user_ID) {  ?>
 <!DOCTYPE html>
 <html lang="fa">
    <head>
       <title><?php the_title(); ?></title>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <!--===============================================================================================-->
+      <meta charset="UTF-8">
+	  <!--===============================================================================================-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!--===============================================================================================-->
       <meta name="author" content="Omid Beheshtian">
-      <meta name="theme-color" content="#9C27B0">
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/bootstrap-rtl.min.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/font-awesome.min.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/animate.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/hamburgers.min.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/select2.min.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/util.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/style.css" rel="stylesheet" />
-   </head>
+	  <!--===============================================================================================-->
+      <meta name="theme-color" content="#431096">
+	<!--===============================================================================================-->
+		<link rel="icon" type="image/png" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/favicon.ico"/>
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/util.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/main.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/loginfront.css">
+	<!--===============================================================================================-->
+	</head>
    <body>
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100"  style="border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 140px;margin-bottom: 0px;">
-
-			<!-- input form -->
+	<div class="container-login100">
+		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+		<div style="display: flex; align-items: center; justify-content: center;">
+				<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo.png" alt="لوگو" style="margin-top:-200px;max-width:170px;z-index:999;position: absolute;">
+		</div>
 			<form class="login100-form validate-form" method="POST" action="#">
-				<span class="login100-form-title">22222222اعتبار سنجی</span>
+				<span class="login100-form-title p-b-37" style="font-size:18.5px;">
+					لطفا کد تایید ارسال شده را وارد کنید
+				</span>
 
-				<!-- enter code-->
-				<div class="wrap-input100 validate-input" data-validate = "لطفا کد ارسالی خود را وارد کنید!">
-					<input class="input100" type="number" name="code" placeholder="کد ارسالی">
+				<div class="wrap-input100 validate-input m-b-20" data-validate="کد تایید نباید خالی باشد!" style="direction:rtl;">
+					<input class="input100" type="number" name="code" placeholder="کد ارسالی" style="text-align:center;">
 					<span class="focus-input100"></span>
-						<span class="symbol-input100">
-						</span>
 				</div>
-				<!-- / enter code -->
 
-				<!-- register button-->
+
 				<div class="container-login100-form-btn">
-					<button class="login100-form-btn" name="SendAuth">ثبت نام</button>
+					<button class="login100-form-btn" name="SendAuth">
+						ثبت نام
+					</button>
 				</div>
-				<!-- / register button -->
 
 
+				<div class="text-center">
+					<br>
+					<a href="#" class="txt2 hov1">
+						دوباره ارسال شود
+					</a>
+				</div>
 			</form>
-			<!-- / input form -->
-
-			<!-- form image -->
-			<div class="login100-pic js-tilt" data-tilt>
-				<img alt="login-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/pics/img-01.png">
-			</div>
-			<!-- / form image -->
-
-			</div>
 		</div>
 	</div>
-	<?php }
-	if($user_ID){
-		wp_redirect(site_url().'/dashboard');
-		exit;
-	}
-	get_footer();
-	?>
+	<div id="dropDownSelect1"></div>
+<!--===============================================================================================-->
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/bootstrap/js/popper.js"></script>
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/daterangepicker/moment.min.js"></script>
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/main.js"></script>
+
+<?php }
+if($user_ID) {
+	wp_redirect(site_url().'/dashboard');
+    exit;
+}
+?>
+	</body>
+	</html>
