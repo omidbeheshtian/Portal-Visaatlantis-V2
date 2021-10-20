@@ -1,1 +1,0 @@
-This Theme is coded by Omid Beheshtian for portal.visaatlantis.com
