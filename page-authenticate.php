@@ -48,12 +48,12 @@ if (!$user_ID) {  ?>
 					لطفا کد تایید ارسال شده را وارد کنید
 				</span>
 
-				<div class="wrap-input100 validate-input m-b-20" data-validate="کد تایید نباید خالی باشد!" style="direction:rtl;">
+				<div class="wrap-input100" style="direction:rtl;">
 					<input class="input100" type="number" name="code" placeholder="کد ارسالی" style="text-align:center;">
 					<span class="focus-input100"></span>
 				</div>
 
-
+				<br>
 				<div class="container-login100-form-btn">
 					<button class="login100-form-btn" name="SendAuth">
 						ثبت نام
@@ -62,10 +62,13 @@ if (!$user_ID) {  ?>
 
 
 				<div class="text-center">
-					<br>
-					<a href="#" class="txt2 hov1">
+				<br>
+					<!-- <a href="#" class="txt2 hov1">
 						دوباره ارسال شود
-					</a>
+					</a> -->
+					<button class="txt2 hov1" name="SendAgain">
+					دوباره ارسال شود
+					</button>
 				</div>
 			</form>
 		</div>

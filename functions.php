@@ -42,6 +42,22 @@
             wp_redirect('authenticate');
     }
  }
+ function vaauthsendagain(){
+    session_start();
+    include("RemotePost.php");
+    $again = $_SESSION['userdata-verifykey'];
+    $phonenumberagain = $_SESSION['userdata-number'];
+    $remotePost=new RemotePost("visaatlantis","4542469atlantis");
+    return ($remotePost->SendCustomMessage("$phonenumberagain","خوش آمدید رمز ورود شما : $again   ویزاآتلانتیس"));
+ }
+ function vaauthsendagainL(){
+    session_start();
+    include("RemotePost.php");
+    $verifyagainL = $_SESSION['userdata-verifykey-login'];
+    $phonenumL = $_SESSION['userdata-login']['user_login'];
+    $remotePost=new RemotePost("visaatlantis","4542469atlantis");
+    return ($remotePost->SendCustomMessage("$phonenumL","خوش آمدید رمز ورود شما : $verifyagainL   ویزاآتلانتیس"));
+ }
 function vaauth($code){
     session_start();
     if(empty($code)){
@@ -67,14 +83,13 @@ function vaauth($code){
         global $wpdb;
         $key = $wpdb->get_row($wpdb->prepare("SELECT ID,user_login,display_name FROM {$wpdb->users} WHERE user_login =$phonenumberlogin "));
         $userdata_id = $key->ID;
-        // session_start();
+        session_start();
         $_SESSION['userdata-login'] = $info;
         $_SESSION['userdata-verifykey-login'] = $verifylogin;
         $_SESSION['userdata-id'] = $userdata_id;
         // $namesms = $wpdb->get_row($wpdb->prepare("SELECT first_name FROM $wpdb->usermeta WHERE nickname =$phonenumberlogin "));
         // $sms = $namesms->first_name;
         if($phonenumberlogin == $key->user_login){
-            
             // $username = "09123789821";
             // $password = '4580098013';
             // $from = "+983000505";
