@@ -16,206 +16,72 @@ $order_key = $order_data["order_key"];
 $valuemoshavere = "https://test.visaatlantis.com/dashboard/checkout/order-received/$order_id/?key=$order_key";
 ?>
 <!DOCTYPE html>
-<html lang="fa">
-   <head dir="rtl">
+<html lang="fa" dir="rtl">
+  <head>
       <title><?php the_title(); ?></title>
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/bootstrap-rtl.min.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/font-awesome.min.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/animate.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/hamburgers.min.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/select2.min.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/util.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/css/style.css" rel="stylesheet" />
-      <link  href="<?php echo esc_url(get_template_directory_uri()); ?>/pics/icons/fav.png" rel="icon" type="image/png" />
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="داشبورد مشتریان ویزا آتلانتیس">
     <meta name="author" content="Omid Beheshtian">
     <meta name="theme-color" content="#4272D7">
-    <!-- Fontfaces CSS-->
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/css/font-face.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/new/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+<body>
+    <input type="checkbox" id="check">
+    <input type="checkbox" id="check2">
+    <!--header area start-->
+      <header>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div id="usercol">
+                  <div class="userdata">
+                      <div id="show"><i class="fas fa-sort-down" style="padding-right: 30px;"></i><span style="padding-right: 15px;"><?php echo $user_name ?></span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/1.png" alt="logo" style="width:45px; margin-right:10px;"></div>
+                      <div class="menu" style="display: none;">
+                        <a href="#" style="font-size:12px;color:#929292; text-decoration:none;"><?php echo $num; ?></a>
+                        <br>
+                        <a href="<?php echo wp_logout_url(home_url()); ?>" id="logoutbtn" style="color:#929292; text-decoration:none;">خروج از حساب</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </header>
+      <?php // wp_head(); ?>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="sidebarm">
+          <label for="check2">
+            <i class="fas fa-bars" id="sidebar_btn" style="font-size: 25px;"><span>فهرست</span></i>
+          </label>
+          <hr style="border: 2px solid;">
+          <a href="https://portal.visaatlantis.com/dashboard"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/dash.png" alt="داشبورد" title="داشبورد"><span>داشبورد</span></a>
+          <a href="https://portal.visaatlantis.com/consultation"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/const.png" alt="مشاوره تخصصی" title="مشاوره تخصصی"><span>مشاوره تخصصی</span></a>
+          <a href="https://portal.visaatlantis.com/dashboard/my-account/files/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/const.png" alt="فایل های من" title="فایل های من"><span>فایل های من</span></a>
+          <a href="https://portal.visaatlantis.com/free-consultation"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/online.png" alt="مشاوره آنلاین" title="مشاوره آنلاین"><span>مشاوره آنلاین</span></a>
+          <a href="https://visaatlantis.com/about/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/about.png" alt="" title="درباره ما"><span>درباره ما</span></a>
+          <a href="https://visaatlantis.com/contact-us/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/contact.png" alt="" title="تماس با ما"><span>تماس با ما</span></a>
+          <a href="https://visaatlantis.com/contact-us/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/collabration.png" alt="" title="همکاری با ما"><span>همکاری با ما</span></a>
+          <a href="https://visaatlantis.com/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/mainsite.png" alt="" title="صفحه اصلی سایت"><span>صفحه اصلی سایت</span></a>
+    </div>
+  <!--mobile navigation bar end-->
+  <!--sidebar start-->
+    <div class="sidebar">
+          <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn" style="font-size: 25px;"><span>فهرست</span></i>
+          </label>
 
-    <!-- Bootstrap CSS-->
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
-
-    <!-- Vendor CSS-->
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/css/theme.css" rel="stylesheet" media="all">
-
-</head>
-
-<body class="animsition">
-    <div class="page-wrapper">
-        <!-- HEADER MOBILE-->
-        <header class="header-mobile d-block d-lg-none">
-            <div class="header-mobile__bar">
-                <div class="container-fluid">
-                    <div class="header-mobile-inner">
-                        <a class="logo" href="https://portal.visaatlantis.com/dashboard">
-                            <p>ویزا آتلانتیس</p>
-                        </a>
-                        <button class="hamburger hamburger--slider" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <nav class="navbar-mobile">
-                <div class="container-fluid">
-                    <ul class="navbar-mobile__list list-unstyled">
-                        <li class="has-sub">
-                            <a class="js-arrow" href="https://test.visaatlantis.com/dashboard">
-                                <i class="fas fa-tachometer-alt" style="padding: 0 0 0 10px;"></i>داشبورد</a>
-                        </li>
-                        <li>
-                            <a href="https://test.visaatlantis.com/test/">
-                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره تخصصی</a>
-                        </li>
-                        <li>
-                            <a href="https://test.visaatlantis.com/dashboard/free-consulation">
-                                <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره آنلاین</a>
-                        </li>
-                        <li>
-                            <a href="https://test.visaatlantis.com/dashboard/my-account/files/">
-                                <i class="far fa-copy" style="padding: 0 0 0 10px;"></i>فایل های من</a>
-                        </li>
-                        <li>
-                            <a href="https://test.visaatlantis.com/dashboard/my-account/orders">
-                                <i class="fas fa-history" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
-                                
-                        </li>
-                        <li>
-                            <a href="https://visaatlantis.com/contact-us/">
-                                <i class="fa fa-phone" style="padding: 0 0 0 10px;"></i>تماس با ما</a>
-                        </li>
-                        <li>
-                            <a href="https://visaatlantis.com/about/">
-                                <i class="fas fa-info" style="padding: 0 0 0 10px;"></i>درباره ما</a>
-                        </li>
-                        <li>
-                            <a href="https://visaatlantis.com/">
-                                <i class="fas fa-home" style="padding: 0 0 0 10px;"></i>صفحه اصلی سایت</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- END HEADER MOBILE-->
-
-        <!-- MENU SIDEBAR-->
-        <aside class="menu-sidebar d-none d-lg-block">
-            <div class="logo">
-                <a href="https://test.visaatlantis.com/dashboard">
-                    <p>ویزا آتلانتیس</p>
-                </a>
-            </div>
-            <div class="menu-sidebar__content js-scrollbar1">
-                <nav class="navbar-sidebar">
-                    <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub">
-                            <a class="js-arrow" href="https://test.visaatlantis.com/dashboard" style="float:right;">
-                                <i class="fas fa-tachometer-alt" style="padding: 0 0 0 10px;"></i>داشبورد</a>
-                        </li>
-                        <?php if($order_status != "completed" && $order_status !="cancelled" && $order_status !="pending" && $order_status !=NULL){ ?>
-                        <li>
-                            <a href="<?php echo $valuemoshavere; ?>" style="float:right;">
-                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>اطلاعات مشاوره جاری شما</a>
-                        </li>
-                        <?php }else{ ?>
-                        <li>
-                            <a href="https://test.visaatlantis.com/test/" style="float:right;">
-                                <i class="far fa-calendar-check" style="padding: 0 0 0 10px;"></i>مشاوره تخصصی</a>
-                                
-                        </li>
-                        <?php } ?>
-                        
-                        <li>
-                            <a href="https://test.visaatlantis.com/dashboard/free-consulation" style="float:right;">
-                                <i class="far fa-comments" style="padding: 0 0 0 10px;"></i>مشاوره آنلاین</a>
-                        </li>
-                        <li>
-                            <a href="https://test.visaatlantis.com/dashboard/my-account/files/" style="float:right;">
-                                <i class="far fa-copy" style="padding: 0 0 0 10px;"></i>فایل های من</a>
-
-                        </li>
-                        <li>
-                            <a href="https://test.visaatlantis.com/dashboard/my-account/orders" style="float:right;">
-                                <i class="fas fa-history" style="padding: 0 0 0 10px;"></i>مشاوره های قبلی</a>
-                        </li>
-                        <li>
-                            <a href="https://visaatlantis.com/contact-us/" style="float:right;">
-                                <i class="fa fa-phone" style="padding: 0 0 0 10px;"></i>تماس با ما</a>
-                        </li>
-                        <li>
-                            <a href="https://visaatlantis.com/about/" style="float:right;">
-                                <i class="fas fa-info" style="padding: 0 0 0 10px;"></i>درباره ما</a>
-                        </li>
-                        <li>
-                            <a href="https://visaatlantis.com/" style="float:right;">
-                                <i class="fas fa-home" style="padding: 0 0 0 10px;"></i>صفحه اصلی سایت</a>
-                        </li>
-                    </ul>
-                </nav>
-           </div>
-        </aside>
-        <!-- END MENU SIDEBAR-->
-
-        <!-- PAGE CONTAINER-->
-        <div class="page-container">
-            <!-- HEADER DESKTOP-->
-            <header class="header-desktop">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="header-wrap">
-                            <div class="header-button">
-                                <div class="account-wrap">
-                                    <div class="account-item clearfix js-item-menu">
-                                        <div class="image">
-                                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/images/icon/valogo.png" alt="Va" />
-                                        </div>
-                                        <div class="content">
-                                            <a class="js-acc-btn" href="#"><?php echo $user_name ?> خوش آمدید </a>
-                                        </div>
-                                        <div class="account-dropdown js-dropdown">
-                                            <div class="info clearfix">
-                                                <div class="image">
-                                                    <a href="#">
-                                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/images/icon/valogo.png" alt="Va" />
-                                                    </a>
-                                                </div>
-                                                <div class="content">
-                                                    <h5 class="name">
-                                                        <a href="#"><?php echo $user_name ?></a>
-                                                    </h5>
-                                                    <span class="emailb"><?php echo $num; ?></span>
-                                                </div>
-                                            </div>
-                                            <div class="account-dropdown__footer">
-                                                <a href="<?php echo wp_logout_url(home_url()); ?>" style="float:right;">
-                                                    <i class="zmdi zmdi-power" style="padding: 0 0 0 10px;"></i>خروج</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- HEADER DESKTOP-->
-            <?php wp_head(); ?>
+        <!-- <span>Dashboard</span> -->
+        <hr style="border: 2px solid;">
+        <a href="https://portal.visaatlantis.com/dashboard"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/dash.png" alt="داشبورد" title="داشبورد"><span>داشبورد</span></a>
+        <a href="https://portal.visaatlantis.com/consultation"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/const.png" alt="مشاوره تخصصی" title="مشاوره تخصصی"><span>مشاوره تخصصی</span></a>
+        <a href="https://portal.visaatlantis.com/dashboard/my-account/files/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/const.png" alt="فایل های من" title="فایل های من"><span>فایل های من</span></a>
+        <a href="https://portal.visaatlantis.com/free-consultation"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/online.png" alt="مشاوره آنلاین" title="مشاوره آنلاین"><span>مشاوره آنلاین</span></a>
+        <a href="https://visaatlantis.com/about/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/about.png" alt="" title="درباره ما"><span>درباره ما</span></a>
+        <a href="https://visaatlantis.com/contact-us/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/contact.png" alt="" title="تماس با ما"><span>تماس با ما</span></a>
+        <a href="https://visaatlantis.com/contact-us/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/collabration.png" alt="" title="همکاری با ما"><span>همکاری با ما</span></a>
+        <a href="https://visaatlantis.com/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/mainsite.png" alt="" title="صفحه اصلی سایت"><span>صفحه اصلی سایت</span></a>
+    </div>
+    <!--sidebar end-->

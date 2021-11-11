@@ -14,6 +14,7 @@ if (!$user_ID) {  ?>
 	  <!--===============================================================================================-->
       <meta name="theme-color" content="#431096">
 	<!--===============================================================================================-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 		<link rel="icon" type="image/png" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/favicon.ico"/>
 	<!--===============================================================================================-->
 		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/bootstrap/css/bootstrap.min.css">
@@ -48,12 +49,12 @@ if (!$user_ID) {  ?>
 					لطفا کد تایید ارسال شده را وارد کنید
 				</span>
 
-				<div class="wrap-input100 validate-input m-b-20" data-validate="کد تایید نباید خالی باشد!" style="direction:rtl;">
-					<input class="input100" type="number" name="code" placeholder="کد ارسالی" style="text-align:center;">
+				<div class="wrap-input100" data-validate="کد تایید نباید خالی باشد!" style="direction:rtl;">
+					<input class="input100" type="text" name="code" placeholder="کد ارسالی" style="text-align:center;">
 					<span class="focus-input100"></span>
 				</div>
 
-
+                <br>
 				<div class="container-login100-form-btn">
 					<button class="login100-form-btn" name="SendAuth">
 						ثبت نام
@@ -63,14 +64,31 @@ if (!$user_ID) {  ?>
 
 				<div class="text-center">
 					<br>
-					<a href="#" class="txt2 hov1">
-						دوباره ارسال شود
-					</a>
+                        <span id="psa" style="color:#fff;">برای ارسال مجدد کد باید <span id="sanie"></span> ثانیه صبر کنید</span>
+                        <button class="txt2 hov1" type="button" id="proceed" style="display:none;" name="SendAgain">ارسال مجدد</button>
+
 				</div>
 			</form>
 		</div>
 	</div>
 	<div id="dropDownSelect1"></div>
+	<script type="text/javascript">
+    $(document).ready(function() {
+      var counter = 60;
+          setInterval(function() {
+            counter--;
+            if (counter >= 0) {
+                span = document.getElementById("sanie");
+                span.innerHTML = counter;
+            }
+            if (counter === 0) {
+                $("#proceed").show();
+                $("#psa").hide();
+                clearInterval(counter);
+            }
+          }, 1000);
+        });
+    </script>
 <!--===============================================================================================-->
 	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->

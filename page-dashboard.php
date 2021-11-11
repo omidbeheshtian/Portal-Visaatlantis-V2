@@ -5,169 +5,118 @@ $userID = $userdata->ID;
 $num = $userdata->user_login;
 $usermeta = get_user_meta($userID);
 if ($user_ID && $usermeta['first_name'][0] != NULL) {  get_header();?>
-            <!-- MAIN CONTENT-->
-            <div class="main-content">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="overview-wrap">
-                                    <h2 class="title-1">پورتال مشتریان</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row m-t-25">
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF; padding:15px 15px 0;">
-                                    <a href="https://portal.visaatlantis.com/dashboard/my-account/orders" class="omidbeheshtian">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                                <i style="font-size:30px; float:right; color:#4272D7;" class="fas fa-history"></i>
-                                                <h2 style="font-size:20px; text-align:right; clear:both; padding-top:10px;">سوابق پرداخت</h2>
-                                        </div>
-                                        <div class="overview-chart">
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-                            
 
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF; padding:15px 15px 0;">
-                                    <a href="https://portal.visaatlantis.com/dashboard/my-account/files/" class="omidbeheshtian">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                                <i style="font-size:30px; float:right; color:#4272D7;" class="far fa-copy"></i>
-                                                <h2 style="font-size:20px; text-align:right; clear:both; padding-top:10px;">فایل های من</h2>
-                                        </div>
-                                        <div class="overview-chart">
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF; padding:15px 15px 0;">
-                                    <a href="https://portal.visaatlantis.com/dashboard/free-consulation" class="omidbeheshtian">
-                                    <div class="overview__inner">
-                                                <i style="font-size:30px; float:right; color:#4272D7;" class="far fa-comments"></i>
-                                                <h2 style="font-size:20px; text-align:right; clear:both; padding-top:10px;">مشاوره آنلاین (رایگان)</h2>
-                                        <div class="overview-chart">
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF; padding:15px 15px 0;">
-                                    <a href="https://portal.visaatlantis.com/dashboard/cunsulations" class="omidbeheshtian">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                                <i style="font-size:30px; float:right; color:#4272D7;" class="far fa-calendar-check"></i>
-                                                    <h2 style="font-size:20px; text-align:right; clear:both; padding-top:10px;">رزرو وقت مشاوره تخصصی</h2>
-                                        </div>
-                                        <div class="overview-chart">
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-lg-3">
-                                <div class="au-card chart-percent-card">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 tm-b-5">آخرین اخبار مجموعه</h3>
-                                        <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('news')) : else : ?><?php endif; ?>
-                                    </div>
-                                </div>
-                            </div>
-                                <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('baner')) : else : ?><?php endif; ?>
-                        </div>
-                        <div class="row m-t-25">
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
-                                    <a href="https://visaatlantis.com/contact-us/" class="omidbeheshtian">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                                <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fa fa-phone"></i>
-                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#333333; text-align:right;;">راه های ارتباط</h2>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
-                                    <a href="https://visaatlantis.com/contact-us/" class="omidbeheshtian">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                                <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fa fa-handshake-o"></i>
-                                                <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#333333; text-align:right;">همکاری</h2>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c5" style="background-color:#FFFFFF;">
-                                    <a href="https://instagram.com/visa.atlantis" class="omidbeheshtian">
-                                    <div class="overview__inner">
-                                            <div class="overview-box clearfix">
-                                                    <i style="font-size:30px; color:#4272D7; float:right; padding-left:10px;" class="fab fa-instagram"></i>
-                                                    <h2 style="font-size:23px;padding:0px 0px 30px 0px; color:#333333; text-align:right;">اینستاگرام</h2>
-                                            </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="copyright">
-                                     <p style="text-align:left;" class="cromid">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
-                        </div>
+<div class="content">
+  <div class="container">
+  <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-md-11 col-lg-11 col-sm-12 col-xs-12" id="dastresi">
+                <h2 style="color:#929292;">دسترسی سریع</h2>
+              </div>
             </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
+            <div class="row" id="mobiledh">
+              <div class="col-lg-5 col-md-12 col-sm-5 col-xs-5" id="reserv"><a href="#" style="text-decoration: none;"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/const.png" alt="" style="width:50px"><span style="padding-right:20px; font-size: 22px;">رزرو وقت مشاوره</span></a><p>با توجه به شرایط شما بهترین گزینه ها به شماغ ارائه می شود و کارشناسان ما در تصمیم گیری برای رسیدن به بهترین نتیجه به شما یاری می رسانند.</p></div>
+              <!--<div class="col-2" id="hidem"></div>-->
+              <div class="col-lg-5 col-md-12 col-sm-5 col-xs-5" id="online"><a href="#" style="text-decoration: none;"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/online.png" alt="" style="width:50px"><span style="padding-right:20px; font-size: 22px;">مشاوره آنلاین (رایگان)</span></a><p>با توجه به شرایط شما بهترین گزینه ها به شماغ ارائه می شود و کارشناسان ما در تصمیم گیری برای رسیدن به بهترین نتیجه به شما یاری می رسانند.</p></div>
+            </div>
+            <!-- mobile -->
+            <div class="row" id="mobiled">
+              <div class="col-lg-4 col-md-12 col-sm-5 col-xs-5" id="reserv"><a href="#" style="text-decoration: none;"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/const.png" alt=""><br><span>رزرو وقت مشاوره</span></a>
+              </div>
+              <div class="col-2" id="hidem"></div>
+              <div class="col-lg-4 col-md-12 col-sm-5 col-xs-5" id="online"><a href="#" style="text-decoration: none;"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/online.png" alt=""><br><span>مشاوره آنلاین (رایگان)</span></a>
+              </div>
+            </div>
+            <!-- mobile end -->
+            <div class="row">
+              <div class="col-md-11 col-lg-11 col-sm-12 col-xs-12" id="baner">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Pic1.jpg" alt="بنر تبلیغاتی">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-11 col-lg-11 col-sm-12 col-xs-12" id="ertebati">
+                <h2 style="color:#929292;">راه های ارتباطی</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-sm-12 col-xs-9" id="insta"><a href="https://instagram.com/visa.atlantis""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/instagram.png" alt=""></a></div>
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-9" id="tele"><a href="https://t.me/visaatlantis""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/telegram1.png" alt=""></a></div>
+              <div class="col-md-3 col-lg-3 col-sm-12 col-xs-9" id="p021"><a href="tel:02188361003"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/phone.png" alt=""></a></div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-sm-9 col-xs-9" id="news">
+              <h1 style="color:#929292; font-size: 29px; padding-top: 15px; text-align: center;">آخرین اخبار مجموعه</h1>
+              <hr>
+              <p>با توجه به شرایط شما بهترین گزینه ها به شماغ ارائه می شود و کارشناسان ما در تصمیم گیری برای رسیدن به بهترین نتیجه به شما یاری می رسانند.</p>
+              <hr>
+              <p>با توجه به شرایط شما بهترین گزینه ها به شماغ ارائه می شود و کارشناسان ما در تصمیم گیری برای رسیدن به بهترین نتیجه به شما یاری می رسانند.</p>
+              <hr>
+              <p>با توجه به شرایط شما بهترین گزینه ها به شماغ ارائه می شود و کارشناسان ما در تصمیم گیری برای رسیدن به بهترین نتیجه به شما یاری می رسانند.</p>
+          </div>
+          <!-- news mobile -->
+          <div class="col-md-12 col-lg-3 col-sm-9 col-xs-9" id="newsm">
+            <h1 style="color:#929292; font-size: 29px; padding-top: 15px; text-align: center;">آخرین اخبار مجموعه</h1>
+            <hr>
+            <p>با توجه به شرایط شما بهترین گزینه ها به شماغ ارائه می شود و کارشناسان ما در تصمیم گیری برای رسیدن به بهترین نتیجه به شما یاری می رسانند.</p>
+            <hr>
+            <p>با توجه به شرایط شما بهترین گزینه ها به شماغ ارائه می شود و کارشناسان ما در تصمیم گیری برای رسیدن به بهترین نتیجه به شما یاری می رسانند.</p>
+            <hr>
+            <p>با توجه به شرایط شما بهترین گزینه ها به شماغ ارائه می شود و کارشناسان ما در تصمیم گیری برای رسیدن به بهترین نتیجه به شما یاری می رسانند.</p>
+          </div>
+<!-- end mobile news -->
+<!-- mobile ertebati -->
+          <div class="col-12" id="ertebatim">
+            <h2 style="color:#929292;">راه های ارتباطی</h2>
+          </div>
+          <div class="row">
+            <div class="col-3" id="instam"><a href="https://instagram.com/visa.atlantis""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/instagram.png" alt=""></a></div>
+            <div class="col-3" id="telem"><a href="https://t.me/visaatlantis""><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/telegram1.png" alt=""></a></div>
+            <div class="col-3" id="p021m"><a href="tel:02188361003"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/phone.png" alt=""></a></div>
+          </div>
+<!-- end mobile ertebati -->
         </div>
-
+      </div>
+  </div>
+  <div class="row">
+    <!-- <hr style="margin-top:20px; margin-bottom:-10px; width:500px; display:flex; justify-content:center; align-items:center;"> -->
+    <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12" style="margin-top:20px; display:flex; justify-content:center; align-items:center;">
+      <p style="text-align:left; color: #ccc;">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by  <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left; text-decoration:none; color: #fff !important; font-weight: normal;"> Omid Beheshtian </a></p>
     </div>
+    <div class="col-md-4 col-xs-0 col-lg-4 col-sm-0"></div>
+  </div>
+</div>
+</div>
 
-    <!-- Jquery JS-->
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap JS-->
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    <!-- Vendor JS       -->
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/slick/slick.min.js">
-    </script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/wow/wow.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/animsition/animsition.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/counter-up/jquery.counterup.min.js">
-    </script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/select2/select2.min.js">
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('#show').click(function() {
+      $('.menu').toggle("slide");
+    });
+    });
     </script>
 
-    <!-- Main JS-->
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
+
 <!-- end document-->
 <?php } 
 elseif(!$user_ID){
     echo "We Have Error in Login/Signup in Visaatlantis Portal";
 }
 elseif($usermeta['first_name'][0] == NULL){?>
-
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+      <title><?php the_title(); ?></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="داشبورد مشتریان ویزا آتلانتیس">
+    <meta name="author" content="Omid Beheshtian">
+    <meta name="theme-color" content="#4272D7">
       <!--===============================================================================================-->
 		<link rel="icon" type="image/png" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/favicon.ico"/>
 	<!--===============================================================================================-->
@@ -191,6 +140,8 @@ elseif($usermeta['first_name'][0] == NULL){?>
 		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/main.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/loginfront.css">
 	<!--===============================================================================================-->
+  </head>
+<body>
 
     <div class="container-login100">
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
@@ -233,7 +184,8 @@ elseif($usermeta['first_name'][0] == NULL){?>
 	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/main.js"></script>
-
+</body>
+</html>
 <?php } 
 if(isset($_POST['SubmitName'])){
 

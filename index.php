@@ -49,7 +49,7 @@ if (!$user_ID) {  ?>
 				</span>
 
 				<div class="wrap-input100 validate-input m-b-20" data-validate="لطفا شماره تماس خود را وارد کنید!" style="direction:rtl;">
-					<input class="input100" type="number" name="phonenumberlogin" placeholder="شماره تماس" style="text-align:center;">
+					<input class="input100" type="text" name="phonenumberlogin" placeholder="شماره تماس" style="text-align:center;">
 					<span class="focus-input100"></span>
 				</div>
 

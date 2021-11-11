@@ -42,6 +42,22 @@
             wp_redirect('authenticate');
     }
  }
+ function vaauthsendagain(){
+    session_start();
+    include("RemotePost.php");
+    $again = $_SESSION['userdata-verifykey'];
+    $phonenumberagain = $_SESSION['userdata-number'];
+    $remotePost=new RemotePost("visaatlantis","4542469atlantis");
+    return ($remotePost->SendCustomMessage("$phonenumberagain","خوش آمدید رمز ورود شما : $again   ویزاآتلانتیس"));
+ }
+ function vaauthsendagainL(){
+    session_start();
+    include("RemotePost.php");
+    $verifyagainL = $_SESSION['userdata-verifykey-login'];
+    $phonenumL = $_SESSION['userdata-login']['user_login'];
+    $remotePost=new RemotePost("visaatlantis","4542469atlantis");
+    return ($remotePost->SendCustomMessage("$phonenumL","خوش آمدید رمز ورود شما : $verifyagainL   ویزاآتلانتیس"));
+ }
 function vaauth($code){
     session_start();
     if(empty($code)){

@@ -19,74 +19,33 @@ $order_status = $last_order->get_status();
 // }
 ?>
 
-            <!-- MAIN CONTENT-->
-            <div class="main-content">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
+<div class="content">
+  <div class="container">
+  <div class="row">
+      <div class="col-lg-12 col-md-11 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-md-11 col-lg-11 col-sm-12 col-xs-12" id="checkout">
+                <?php the_content(); ?>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+  </div>
+    <div class="row">
+    <!-- <hr style="margin-top:20px; margin-bottom:-10px; width:500px; display:flex; justify-content:center; align-items:center;"> -->
+    <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12" style="margin-top:20px; display:flex; justify-content:center; align-items:center;">
+      <p style="text-align:left; color: #ccc;">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by  <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left; text-decoration:none; color: #fff !important; font-weight: normal;"> Omid Beheshtian </a></p>
+    </div>
+    <div class="col-md-4 col-xs-0 col-lg-4 col-sm-0"></div>
+  </div>
+  </div>
+</div>
 
-                            <div class="row m-t-25">
-                                <div class="col-sm-6 col-lg-12">
-                                    <div class="overview-item overview-item--c2" >
-                                        <div class="overview__inner" >
-                                            <div class="overview-chart" style="z-index: 999;">
-                                            <?php the_content(); ?>
-                                            <?php do_action( 'woocommerce_before_checkout_form', $checkout ); ?>
-                                            </div>
-                                            <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
-                                            <div class="overview-chart"></div>
-                                            <!--<div class="overview-chart"></div>-->
-                                            <!--<div class="overview-chart"></div>-->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    <!--</div>-->
-                <div class="copyright">
-                          <p style="text-align:left;" class="cromid">Copyright © 2021 Visaatlantis. All rights reserved. Programmed by </p> <a href="https://omidbeheshtian.ir" class="omidbeheshtian" style="text-align:left;"> Omid Beheshtian </a> 
-                </div>
-                </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
-        </div>
-
-
-    <!-- Jquery JS-->
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap JS-->
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    <!-- Vendor JS       -->
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/slick/slick.min.js">
-    </script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/wow/wow.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/animsition/animsition.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/counter-up/jquery.counterup.min.js">
-    </script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/vendor/select2/select2.min.js">
-    </script>
-
-    <!-- Main JS-->
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dashboardd/js/main.js"></script>
-
-</body>
-
-</html>
-<!-- end document-->
 <?php } 
-elseif(!$user_ID){
-    echo "Login First Please.";
-}
-get_footer();
-?>
+  get_footer();
+  ?>
+  </body>
+</html>

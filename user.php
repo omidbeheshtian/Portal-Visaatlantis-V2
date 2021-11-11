@@ -20,3 +20,11 @@
 
 		vaauthlogin($_POST['codelogin']);
 	}
+
+	if(isset($_POST['SendAgain'])){
+		vaauthsendagain();
+	}
+
+	if(isset($_POST['SendAgainL'])){
+		vaauthsendagainL();
+	}

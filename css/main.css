@@ -181,13 +181,11 @@ iframe {
 
 .wrap-login100 {
   width: 390px;
-  background: rgb(73,69,208);
-  background: linear-gradient(90deg, rgba(73,69,208,1) 40%, rgba(67,16,150,1) 100%);
+-webkit-box-shadow: 0px 0px 23px 5px rgba(70,16,146,0.59); 
+box-shadow: 0px 0px 23px 5px rgba(70,16,146,0.59);
   border-radius: 25px;
   overflow: hidden;
 
-  -webkit-box-shadow: 0px 10px 18px 3px #292929; 
-box-shadow: 0px 10px 18px 3px #292929;
 }
 
 
@@ -292,26 +290,12 @@ box-shadow: 0px 10px 18px 3px #292929;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-transform: uppercase;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-
-  box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
-  -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
-  -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
-  -o-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
-  -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
+-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3); 
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
 }
 
 .login100-form-btn:hover {
   background-color: #fff;
-  box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
-  -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
-  -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
-  -o-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
-  -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
 }
 
 
@@ -442,5 +426,6 @@ box-shadow: 0px 10px 18px 3px #292929;
   .wrap-login100 {
     padding-left: 15px;
     padding-right: 15px;
+    background:#4945d0;
   }
 }
