@@ -21,6 +21,10 @@
 		vaauthlogin($_POST['codelogin']);
 	}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6d210b659499e0cc1483392610d9db6af7584566
 	if(isset($_POST['SendAgain'])){
 		vaauthsendagain();
 	}

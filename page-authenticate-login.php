@@ -50,11 +50,19 @@ if (!$user_ID) {  ?>
 				</span>
 
 				<div class="wrap-input100" data-validate="کد تایید نباید خالی باشد!" style="direction:rtl;">
+<<<<<<< HEAD
 					<input class="input100" type="text" name="codelogin" placeholder="کد ارسالی" style="text-align:center;">
 					<span class="focus-input100"></span>
 				</div>
 
                 <br>
+=======
+					<input class="input100" type="number" name="codelogin" placeholder="کد ارسالی" style="text-align:center;">
+					<span class="focus-input100"></span>
+				</div>
+
+				<br>
+>>>>>>> 6d210b659499e0cc1483392610d9db6af7584566
 				<div class="container-login100-form-btn">
 					<button class="login100-form-btn" name="SendAuthLogin">
 						ورود
@@ -64,9 +72,18 @@ if (!$user_ID) {  ?>
 
 				<div class="text-center">
 					<br>
+<<<<<<< HEAD
                         <span id="psa" style="color:#fff;">برای ارسال مجدد کد باید <span id="sanie"></span> ثانیه صبر کنید</span>
                         <button class="txt2 hov1" id="proceed" style="display:none;" name="SendAgainL">ارسال مجدد</button>
 
+=======
+					<!-- <a href="#" class="txt2 hov1">
+						دوباره ارسال شود
+					</a> -->
+					<button class="txt2 hov1" name="SendAgainL">
+					دوباره ارسال شود
+					</button>
+>>>>>>> 6d210b659499e0cc1483392610d9db6af7584566
 				</div>
 			</form>
 		</div>

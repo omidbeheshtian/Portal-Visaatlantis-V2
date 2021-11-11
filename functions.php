@@ -83,14 +83,13 @@ function vaauth($code){
         global $wpdb;
         $key = $wpdb->get_row($wpdb->prepare("SELECT ID,user_login,display_name FROM {$wpdb->users} WHERE user_login =$phonenumberlogin "));
         $userdata_id = $key->ID;
-        // session_start();
+        session_start();
         $_SESSION['userdata-login'] = $info;
         $_SESSION['userdata-verifykey-login'] = $verifylogin;
         $_SESSION['userdata-id'] = $userdata_id;
         // $namesms = $wpdb->get_row($wpdb->prepare("SELECT first_name FROM $wpdb->usermeta WHERE nickname =$phonenumberlogin "));
         // $sms = $namesms->first_name;
         if($phonenumberlogin == $key->user_login){
-            
             // $username = "09123789821";
             // $password = '4580098013';
             // $from = "+983000505";
